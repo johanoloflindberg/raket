@@ -1,0 +1,3296 @@
+@import url(../sass/plugins/jquery.fancybox.css);
+@import url(../sass/plugins/jquery.fancybox-thumbs.css);
+/*! normalize.css v3.0.1 | MIT License | git.io/normalize */
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+/* line 9, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/_framework/css/reset/reset */
+html {
+  font-family: sans-serif;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */ }
+
+/**
+ * Remove default margin.
+ */
+/* line 19, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/_framework/css/reset/reset */
+body, table {
+  margin: 0; }
+
+/* HTML5 display definitions
+   ========================================================================== */
+/**
+ * Correct `block` display not defined for any HTML5 element in IE 8/9.
+ * Correct `block` display not defined for `details` or `summary` in IE 10/11 and Firefox.
+ * Correct `block` display not defined for `main` in IE 11.
+ */
+/* line 43, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/_framework/css/reset/reset */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
+  display: block; }
+
+/**
+ * 1. Correct `inline-block` display not defined in IE 8/9.
+ * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
+ */
+/* line 55, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/_framework/css/reset/reset */
+audio, canvas, progress, video {
+  display: inline-block;
+  /* 1 */
+  vertical-align: baseline;
+  /* 2 */ }
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+/* line 65, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/_framework/css/reset/reset */
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+/**
+ * Address `[hidden]` styling not present in IE 8/9/10.
+ * Hide the `template` element in IE 8/9/11, Safari, and Firefox < 22.
+ */
+/* line 76, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/_framework/css/reset/reset */
+[hidden], template {
+  display: none; }
+
+/* Links
+   ========================================================================== */
+/**
+ * Remove the gray background color from active links in IE 10.
+ */
+/* line 87, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/_framework/css/reset/reset */
+a {
+  background: transparent; }
+
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+/* line 96, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/_framework/css/reset/reset */
+a:active, a:hover {
+  outline: 0; }
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Address styling not present in IE 8/9/10/11, Safari, and Chrome.
+ */
+/* line 107, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/_framework/css/reset/reset */
+abbr[title] {
+  border-bottom: 1px dotted; }
+
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.
+ */
+/* line 116, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/_framework/css/reset/reset */
+b, strong {
+  font-weight: bold; }
+
+/**
+ * Address styling not present in Safari and Chrome.
+ */
+/* line 124, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/_framework/css/reset/reset */
+dfn {
+  font-style: italic; }
+
+/**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari, and Chrome.
+ */
+/* line 133, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/_framework/css/reset/reset */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0; }
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+/* line 142, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/_framework/css/reset/reset */
+mark {
+  background: #ff0;
+  color: #000; }
+
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+/* line 151, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/_framework/css/reset/reset */
+small {
+  font-size: 80%; }
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+/* line 160, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/_framework/css/reset/reset */
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+/* line 167, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/_framework/css/reset/reset */
+sup {
+  top: -0.5em; }
+
+/* line 171, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/_framework/css/reset/reset */
+sub {
+  bottom: -0.25em; }
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove border when inside `a` element in IE 8/9/10.
+ */
+/* line 182, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/_framework/css/reset/reset */
+img {
+  border: 0; }
+
+/**
+ * Correct overflow not hidden in IE 9/10/11.
+ */
+/* line 190, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/_framework/css/reset/reset */
+svg:not(:root) {
+  overflow: hidden; }
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * Address margin not present in IE 8/9 and Safari.
+ */
+/* line 201, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/_framework/css/reset/reset */
+figure {
+  margin: 1em 40px; }
+
+/**
+ * Address differences between Firefox and other browsers.
+ */
+/* line 209, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/_framework/css/reset/reset */
+hr {
+  box-sizing: content-box;
+  height: 0; }
+
+/**
+ * Contain overflow in all browsers.
+ */
+/* line 219, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/_framework/css/reset/reset */
+pre {
+  overflow: auto; }
+
+/**
+ * Address odd `em`-unit font size rendering in all browsers.
+ */
+/* line 230, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/_framework/css/reset/reset */
+code, kbd, pre, samp {
+  font-family: monospace, monospace;
+  font-size: 1em; }
+
+/* Forms
+   ========================================================================== */
+/**
+ * Known limitation: by default, Chrome and Safari on OS X allow very limited
+ * styling of `select`, unless a `border` property is set.
+ */
+/**
+ * 1. Correct color not being inherited.
+ *    Known issue: affects color of disabled elements.
+ * 2. Correct font properties not being inherited.
+ * 3. Address margins set differently in Firefox 4+, Safari, and Chrome.
+ */
+/* line 254, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/_framework/css/reset/reset */
+button, input, optgroup, select, textarea {
+  color: inherit;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+  margin: 0;
+  /* 3 */ }
+
+/**
+ * Address `overflow` set to `hidden` in IE 8/9/10/11.
+ */
+/* line 264, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/_framework/css/reset/reset */
+button {
+  overflow: visible; }
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera.
+ * Correct `select` style inheritance in Firefox.
+ */
+/* line 276, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/_framework/css/reset/reset */
+button, select {
+  text-transform: none; }
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+/* line 291, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/_framework/css/reset/reset */
+button, html input[type="button"], input[type="reset"], input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */ }
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+/* line 301, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/_framework/css/reset/reset */
+button[disabled], html input[disabled] {
+  cursor: default; }
+
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+/* line 310, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/_framework/css/reset/reset */
+button::-moz-focus-inner, input::-moz-focus-inner {
+  border: 0;
+  padding: 0; }
+
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+/* line 320, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/_framework/css/reset/reset */
+input {
+  line-height: normal; }
+
+/**
+ * It's recommended that you don't attempt to style these elements.
+ * Firefox's implementation doesn't respect box-sizing, padding, or width.
+ *
+ * 1. Address box sizing set to `content-box` in IE 8/9/10.
+ * 2. Remove excess padding in IE 8/9/10.
+ */
+/* line 333, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/_framework/css/reset/reset */
+input[type="checkbox"], input[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+ * Fix the cursor style for Chrome's increment/decrement buttons. For certain
+ * `font-size` values of the `input`, it causes the cursor style of the
+ * decrement button to change from `default` to `text`.
+ */
+/* line 345, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/_framework/css/reset/reset */
+input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-outer-spin-button {
+  height: auto; }
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari and Chrome
+ *    (include `-moz` to future-proof).
+ */
+/* line 355, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/_framework/css/reset/reset */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  /* 2 */
+  box-sizing: content-box; }
+
+/**
+ * Remove inner padding and search cancel button in Safari and Chrome on OS X.
+ * Safari (but not Chrome) clips the cancel button when the search input has
+ * padding (and `textfield` appearance).
+ */
+/* line 369, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/_framework/css/reset/reset */
+input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+/**
+ * Define consistent border, margin, and padding.
+ */
+/* line 377, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/_framework/css/reset/reset */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em; }
+
+/**
+ * 1. Correct `color` not being inherited in IE 8/9/10/11.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+/* line 388, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/_framework/css/reset/reset */
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+ * Remove default vertical scrollbar in IE 8/9/10/11.
+ */
+/* line 397, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/_framework/css/reset/reset */
+textarea {
+  overflow: auto; }
+
+/**
+ * Don't inherit the `font-weight` (applied by a rule above).
+ * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.
+ */
+/* line 406, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/_framework/css/reset/reset */
+optgroup {
+  font-weight: bold; }
+
+/* Tables
+   ========================================================================== */
+/**
+ * Remove most spacing between table cells.
+ */
+/* line 417, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/_framework/css/reset/reset */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* line 423, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/_framework/css/reset/reset */
+td, th {
+  padding: 0; }
+
+/*! normalize-opentype v0.2.1 | MIT License | kennethormandy.com/journal/normalize-opentype-css */
+/**
+ * 1. Inherit style issues with custom selections, per robsterlini.co.uk/journal/opentype-and-selection-dont-mix
+ * 2. Turn on kerning, standard ligatures, and proportional, oldstyle numerals
+ *    Turn off all other ligatures, tabular, lining numerals, and alternates
+ */
+/* line 9, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/_framework/css/reset/normalize-opentype */
+::-moz-selection {
+  color: inherit;
+  /* 1. */
+  text-shadow: inherit;
+  /* 1. */ }
+::selection {
+  color: inherit;
+  /* 1. */
+  text-shadow: inherit;
+  /* 1. */ }
+
+/* line 15, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/_framework/css/reset/normalize-opentype */
+html, body, table {
+  -webkit-font-feature-settings: "kern" 1, "liga" 1, "calt" 1, "pnum" 1, "tnum" 0, "onum" 1, "lnum" 0, "dlig" 0;
+  -moz-font-feature-settings: "kern" 1, "liga" 1, "calt" 1, "pnum" 1, "tnum" 0, "onum" 1, "lnum" 0, "dlig" 0;
+  font-feature-settings: "kern" 1, "liga" 1, "calt" 1, "pnum" 1, "tnum" 0, "onum" 1, "lnum" 0, "dlig" 0;
+  /* 2. */ }
+
+/* Headings
+========================================================================== */
+/**
+ * 1. Turn on discretionary ligatures for larger headings
+ */
+/* line 28, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/_framework/css/reset/normalize-opentype */
+h1, h2, h3 {
+  -webkit-font-feature-settings: "kern" 1, "liga" 1, "calt" 1, "pnum" 1, "tnum" 0, "onum" 1, "lnum" 0, "dlig" 1;
+  -moz-font-feature-settings: "kern" 1, "liga" 1, "calt" 1, "pnum" 1, "tnum" 0, "onum" 1, "lnum" 0, "dlig" 1;
+  font-feature-settings: "kern" 1, "liga" 1, "calt" 1, "pnum" 1, "tnum" 0, "onum" 1, "lnum" 0, "dlig" 1;
+  /* 1. */ }
+
+/* Text-level semantics
+========================================================================== */
+/**
+ * 1. Change all letters to uppercase
+ * 2. Turn on small caps for upper and lowercase letters
+ */
+/* line 40, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/_framework/css/reset/normalize-opentype */
+abbr {
+  text-transform: uppercase;
+  /* 1 */
+  -webkit-font-feature-settings: "kern" 1, "liga" 1, "calt" 1, "pnum" 1, "tnum" 0, "onum" 1, "lnum" 0, "smcp" 1, "c2sc" 1;
+  -moz-font-feature-settings: "kern" 1, "liga" 1, "calt" 1, "pnum" 1, "tnum" 0, "onum" 1, "lnum" 0, "smcp" 1, "c2sc" 1;
+  font-feature-settings: "kern" 1, "liga" 1, "calt" 1, "pnum" 1, "tnum" 0, "onum" 1, "lnum" 0, "smcp" 1, "c2sc" 1;
+  /* 2 */ }
+
+/*
+ * TODO: Turn on diagonal fractions where appropriate
+ */
+/* line 49, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/_framework/css/reset/normalize-opentype */
+time {
+  -webkit-font-feature-settings: "kern" 1, "liga" 1, "calt" 1, "pnum" 1, "tnum" 0, "onum" 1, "lnum" 0;
+  -moz-font-feature-settings: "kern" 1, "liga" 1, "calt" 1, "pnum" 1, "tnum" 0, "onum" 1, "lnum" 0;
+  font-feature-settings: "kern" 1, "liga" 1, "calt" 1, "pnum" 1, "tnum" 0, "onum" 1, "lnum" 0; }
+
+/*
+ * 1. Turn off kerning and ligatures,
+ *    Turn on lining, tabular numerals, slashed zero
+ */
+/* line 61, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/_framework/css/reset/normalize-opentype */
+pre, kbd, samp, code {
+  -webkit-font-feature-settings: "kern" 0, "liga" 0, "calt" 1, "dlig" 0, "pnum" 0, "tnum" 1, "onum" 0, "lnum" 1, "zero" 1;
+  -moz-font-feature-settings: "kern" 0, "liga" 0, "calt" 1, "dlig" 0, "pnum" 0, "tnum" 1, "onum" 0, "lnum" 1, "zero" 1;
+  font-feature-settings: "kern" 0, "liga" 0, "calt" 1, "dlig" 0, "pnum" 0, "tnum" 1, "onum" 0, "lnum" 1, "zero" 1;
+  /* 1. */ }
+
+/**
+ * 1. Turn on proper supercript numerals
+ */
+/* line 78, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/_framework/css/reset/normalize-opentype */
+sup {
+  -webkit-font-feature-settings: "kern" 1, "liga" 1, "calt" 1, "pnum" 1, "tnum" 0, "onum" 1, "lnum" 0, "dlig" 0, "sups" 1;
+  -moz-font-feature-settings: "kern" 1, "liga" 1, "calt" 1, "pnum" 1, "tnum" 0, "onum" 1, "lnum" 0, "dlig" 0, "sups" 1;
+  font-feature-settings: "kern" 1, "liga" 1, "calt" 1, "pnum" 1, "tnum" 0, "onum" 1, "lnum" 0, "dlig" 0, "sups" 1;
+  /* 1. */ }
+
+/**
+ * 1. Turn on proper subscript numerals
+ */
+/* line 86, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/_framework/css/reset/normalize-opentype */
+sub {
+  -webkit-font-feature-settings: "kern" 1, "liga" 1, "calt" 1, "pnum" 1, "tnum" 0, "onum" 1, "lnum" 0, "dlig" 0, "subs" 1;
+  -moz-font-feature-settings: "kern" 1, "liga" 1, "calt" 1, "pnum" 1, "tnum" 0, "onum" 1, "lnum" 0, "dlig" 0, "subs" 1;
+  font-feature-settings: "kern" 1, "liga" 1, "calt" 1, "pnum" 1, "tnum" 0, "onum" 1, "lnum" 0, "dlig" 0, "subs" 1;
+  /* 1. */ }
+
+/* Grouping content
+========================================================================== */
+/**
+ * TODO: Adds proper bullets
+ */
+/*
+ * TODO:
+ * 1. Adds counters for lists
+ * 2. Use proper numerals for lists
+ */
+/**
+ * Adds proper small caps
+ */
+/**
+ * TODO: scmp, sc2c, pnum, case sensitive forms for postal codes
+ */
+/* Forms
+========================================================================== */
+/**
+ * 1. Turns on lining, proportional numerals without clarified zeroes
+ * TODO: Additional input modes https://developer.mozilla.org/en/docs/Web/HTML/Element/Input#attr-inputmode
+ */
+/* line 151, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/_framework/css/reset/normalize-opentype */
+input[type="color"], input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="number"], input[type="range"], input[type="tel"], input[type="week"] {
+  -webkit-font-feature-settings: "kern" 0, "liga" 1, "calt" 1, "pnum" 1, "tnum" 0, "onum" 0, "lnum" 1, "zero" 0;
+  -moz-font-feature-settings: "kern" 0, "liga" 1, "calt" 1, "pnum" 1, "tnum" 0, "onum" 0, "lnum" 1, "zero" 0;
+  font-feature-settings: "kern" 0, "liga" 1, "calt" 1, "pnum" 1, "tnum" 0, "onum" 0, "lnum" 1, "zero" 0;
+  /* 1. */ }
+
+/* Localisation
+========================================================================== */
+/* Tables
+========================================================================== */
+/**
+ * 1. Resets tables to the same settings as the body.
+ * 2. Turns on tabular, lining numerals and slashed zero
+ */
+/* line 221, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/_framework/css/reset/normalize-opentype */
+table {
+  /* 1.*/ }
+
+/* line 226, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/_framework/css/reset/normalize-opentype */
+tbody, caption {
+  -webkit-font-feature-settings: "kern" 1, "liga" 1, "calt" 1, "pnum" 0, "tnum" 1, "onum" 0, "lnum" 1, "zero" 1;
+  -moz-font-feature-settings: "kern" 1, "liga" 1, "calt" 1, "pnum" 0, "tnum" 1, "onum" 0, "lnum" 1, "zero" 1;
+  font-feature-settings: "kern" 1, "liga" 1, "calt" 1, "pnum" 0, "tnum" 1, "onum" 0, "lnum" 1, "zero" 1;
+  /* 1. */ }
+
+/* Bitters 0.10.0
+ * http://bitters.bourbon.io
+ * Copyright 2013–2014 thoughtbot, inc.
+ * MIT License */
+/* line 1, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/_framework/css/base/extends/button */
+button, input[type="submit"] {
+  -webkit-font-smoothing: antialiased;
+  background-color: #477DCA;
+  border-radius: 3px;
+  color: white;
+  display: inline-block;
+  font-size: 1em;
+  font-weight: bold;
+  line-height: 1;
+  padding: 0.75em 1em;
+  text-decoration: none; }
+  /* line 13, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/_framework/css/base/extends/button */
+  button:hover, input[type="submit"]:hover {
+    background-color: #2c5999;
+    color: white; }
+  /* line 18, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/_framework/css/base/extends/button */
+  button:disabled, input[type="submit"]:disabled {
+    cursor: not-allowed;
+    opacity: 0.5; }
+
+/* line 1, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/_framework/css/base/typography */
+body, table {
+  -webkit-font-smoothing: antialiased;
+  background-color: white;
+  color: #333;
+  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-size: 1em;
+  line-height: 1.5; }
+
+/* line 15, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/_framework/css/base/typography */
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  line-height: 1.25;
+  margin: 0;
+  text-rendering: optimizeLegibility; }
+
+/* line 22, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/_framework/css/base/typography */
+h1 {
+  font-size: 2.25em; }
+
+/* line 26, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/_framework/css/base/typography */
+h2 {
+  font-size: 2em; }
+
+/* line 30, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/_framework/css/base/typography */
+h3 {
+  font-size: 1.75em; }
+
+/* line 34, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/_framework/css/base/typography */
+h4 {
+  font-size: 1.5em; }
+
+/* line 38, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/_framework/css/base/typography */
+h5 {
+  font-size: 1.25em; }
+
+/* line 42, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/_framework/css/base/typography */
+h6 {
+  font-size: 1em; }
+
+/* line 46, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/_framework/css/base/typography */
+p {
+  margin: 0 0 0.75em; }
+
+/* line 50, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/_framework/css/base/typography */
+a {
+  transition: color 0.1s linear;
+  color: #477DCA;
+  text-decoration: none; }
+  /* line 55, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/_framework/css/base/typography */
+  a:hover {
+    color: #2c5999; }
+  /* line 59, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/_framework/css/base/typography */
+  a:active, a:focus {
+    color: #2c5999;
+    outline: none; }
+
+/* line 65, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/_framework/css/base/typography */
+hr {
+  border-bottom: 1px solid #DDD;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  margin: 1.5em 0; }
+
+/* line 74, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/_framework/css/base/typography */
+img, picture {
+  margin: 0;
+  max-width: 100%; }
+
+/* line 79, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/_framework/css/base/typography */
+blockquote {
+  border-left: 2px solid #DDD;
+  color: #595959;
+  margin: 1.5em 0;
+  padding-left: 0.75em; }
+
+/* line 86, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/_framework/css/base/typography */
+cite {
+  color: #737373;
+  font-style: italic; }
+  /* line 90, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/_framework/css/base/typography */
+  cite:before {
+    content: "\2014 \00A0"; }
+
+/* line 1, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/_framework/css/base/forms */
+fieldset {
+  background: #f7f7f7;
+  border: 1px solid #DDD;
+  margin: 0 0 0.75em 0;
+  padding: 1.5em; }
+
+/* line 10, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/_framework/css/base/forms */
+input, label, select {
+  display: block;
+  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-size: 1em; }
+
+/* line 16, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/_framework/css/base/forms */
+label {
+  font-weight: bold;
+  margin-bottom: 0.375em; }
+  /* line 20, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/_framework/css/base/forms */
+  label.required:after {
+    content: "*"; }
+  /* line 24, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/_framework/css/base/forms */
+  label abbr {
+    display: none; }
+
+/* line 29, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/_framework/css/base/forms */
+textarea, input[type="email"], input[type="number"], input[type="password"], input[type="search"], input[type="tel"], input[type="text"], input[type="url"], input[type="color"], input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="month"], input[type="time"], input[type="week"], select[multiple=multiple] {
+  box-sizing: border-box;
+  transition: border-color;
+  background-color: white;
+  border-radius: 3px;
+  border: 1px solid #DDD;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.06);
+  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-size: 1em;
+  margin-bottom: 0.75em;
+  padding: 0.5em 0.5em;
+  width: 100%; }
+  /* line 42, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/_framework/css/base/forms */
+  textarea:hover, input[type="email"]:hover, input[type="number"]:hover, input[type="password"]:hover, input[type="search"]:hover, input[type="tel"]:hover, input[type="text"]:hover, input[type="url"]:hover, input[type="color"]:hover, input[type="date"]:hover, input[type="datetime"]:hover, input[type="datetime-local"]:hover, input[type="month"]:hover, input[type="time"]:hover, input[type="week"]:hover, select[multiple=multiple]:hover {
+    border-color: #c4c4c4; }
+  /* line 46, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/_framework/css/base/forms */
+  textarea:focus, input[type="email"]:focus, input[type="number"]:focus, input[type="password"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="text"]:focus, input[type="url"]:focus, input[type="color"]:focus, input[type="date"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="month"]:focus, input[type="time"]:focus, input[type="week"]:focus, select[multiple=multiple]:focus {
+    border-color: #477DCA;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.06), 0 0 5px rgba(55, 112, 192, 0.7);
+    outline: none; }
+
+/* line 53, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/_framework/css/base/forms */
+textarea {
+  resize: vertical; }
+
+/* line 57, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/_framework/css/base/forms */
+input[type="search"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none; }
+
+/* line 62, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/_framework/css/base/forms */
+input[type="checkbox"], input[type="radio"] {
+  display: inline;
+  margin-right: 0.375em; }
+
+/* line 67, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/_framework/css/base/forms */
+input[type="file"] {
+  padding-bottom: 0.75em;
+  width: 100%; }
+
+/* line 72, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/_framework/css/base/forms */
+select {
+  margin-bottom: 1.5em;
+  max-width: 100%;
+  width: auto; }
+
+/* line 1, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/_framework/css/base/tables */
+table {
+  border-collapse: collapse;
+  margin: 0.75em 0;
+  table-layout: fixed;
+  width: 100%; }
+
+/* line 8, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/_framework/css/base/tables */
+th {
+  border-bottom: 1px solid #b7b7b7;
+  font-weight: bold;
+  padding: 0.75em 0;
+  text-align: left; }
+
+/* line 15, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/_framework/css/base/tables */
+td {
+  border-bottom: 1px solid #DDD;
+  padding: 0.75em 0; }
+
+/* line 22, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/_framework/css/base/tables */
+tr, td, th {
+  vertical-align: middle; }
+
+/* line 2, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/_framework/css/base/lists */
+ul, ol {
+  margin: 0;
+  padding: 0;
+  list-style-type: none; }
+
+/* line 20, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/_framework/css/base/lists */
+dl {
+  margin-bottom: 0.75em; }
+  /* line 23, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/_framework/css/base/lists */
+  dl dt {
+    font-weight: bold;
+    margin-top: 0.75em; }
+  /* line 28, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/_framework/css/base/lists */
+  dl dd {
+    margin: 0; }
+
+/* line 2, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/_framework/css/base/buttons */
+button, input[type="submit"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  border: none;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  vertical-align: middle;
+  white-space: nowrap; }
+
+/* Neat 1.7.0
+ * http://neat.bourbon.io
+ * Copyright 2012-2014 thoughtbot, inc.
+ * MIT License */
+/* line 2, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/_framework/css/neat/grid/box-sizing */
+html {
+  box-sizing: border-box; }
+
+/* line 7, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/_framework/css/neat/grid/box-sizing */
+*, *:before, *:after {
+  box-sizing: inherit; }
+
+/* -----------------------------------------
+   Grid
+----------------------------------------- */
+/* line 10, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/site/grid */
+.container {
+  max-width: 60rem;
+  margin-left: auto;
+  margin-right: auto; }
+  /* line 15, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/_framework/css/bourbon/addons/clearfix */
+  .container:after {
+    content: "";
+    display: table;
+    clear: both; }
+
+/* line 16, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/site/grid */
+.row {
+  display: block; }
+  /* line 15, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/_framework/css/bourbon/addons/clearfix */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both; }
+  /* line 21, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/site/grid */
+  .row .col-1 {
+    margin: 0;
+    float: left;
+    display: block;
+    margin-right: 2.3576515979%;
+    width: 6.1721527019%; }
+    /* line 85, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/_framework/css/neat/grid/span-columns */
+    .row .col-1:last-child {
+      margin-right: 0 !important; }
+    @media screen and (max-width: 767px)  {
+      .row .col-1 {
+        float: left;
+        display: block;
+        margin-right: 2.3576515979%;
+        width: 100%; }
+        /* line 85, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/_framework/css/neat/grid/span-columns */
+        .row .col-1:last-child {
+          margin-right: 0 !important; } }
+  /* line 21, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/site/grid */
+  .row .col-2 {
+    margin: 0;
+    float: left;
+    display: block;
+    margin-right: 2.3576515979%;
+    width: 14.7019570017%; }
+    /* line 85, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/_framework/css/neat/grid/span-columns */
+    .row .col-2:last-child {
+      margin-right: 0 !important; }
+    @media screen and (max-width: 767px)  {
+      .row .col-2 {
+        float: left;
+        display: block;
+        margin-right: 2.3576515979%;
+        width: 100%; }
+        /* line 85, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/_framework/css/neat/grid/span-columns */
+        .row .col-2:last-child {
+          margin-right: 0 !important; } }
+  /* line 21, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/site/grid */
+  .row .col-3 {
+    margin: 0;
+    float: left;
+    display: block;
+    margin-right: 2.3576515979%;
+    width: 23.2317613015%; }
+    /* line 85, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/_framework/css/neat/grid/span-columns */
+    .row .col-3:last-child {
+      margin-right: 0 !important; }
+    @media screen and (max-width: 767px)  {
+      .row .col-3 {
+        float: left;
+        display: block;
+        margin-right: 2.3576515979%;
+        width: 100%; }
+        /* line 85, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/_framework/css/neat/grid/span-columns */
+        .row .col-3:last-child {
+          margin-right: 0 !important; } }
+  /* line 21, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/site/grid */
+  .row .col-4 {
+    margin: 0;
+    float: left;
+    display: block;
+    margin-right: 2.3576515979%;
+    width: 31.7615656014%; }
+    /* line 85, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/_framework/css/neat/grid/span-columns */
+    .row .col-4:last-child {
+      margin-right: 0 !important; }
+    @media screen and (max-width: 767px)  {
+      .row .col-4 {
+        float: left;
+        display: block;
+        margin-right: 2.3576515979%;
+        width: 100%; }
+        /* line 85, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/_framework/css/neat/grid/span-columns */
+        .row .col-4:last-child {
+          margin-right: 0 !important; } }
+  /* line 21, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/site/grid */
+  .row .col-5 {
+    margin: 0;
+    float: left;
+    display: block;
+    margin-right: 2.3576515979%;
+    width: 40.2913699012%; }
+    /* line 85, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/_framework/css/neat/grid/span-columns */
+    .row .col-5:last-child {
+      margin-right: 0 !important; }
+    @media screen and (max-width: 767px)  {
+      .row .col-5 {
+        float: left;
+        display: block;
+        margin-right: 2.3576515979%;
+        width: 100%; }
+        /* line 85, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/_framework/css/neat/grid/span-columns */
+        .row .col-5:last-child {
+          margin-right: 0 !important; } }
+  /* line 21, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/site/grid */
+  .row .col-6 {
+    margin: 0;
+    float: left;
+    display: block;
+    margin-right: 2.3576515979%;
+    width: 48.821174201%; }
+    /* line 85, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/_framework/css/neat/grid/span-columns */
+    .row .col-6:last-child {
+      margin-right: 0 !important; }
+    @media screen and (max-width: 767px)  {
+      .row .col-6 {
+        float: left;
+        display: block;
+        margin-right: 2.3576515979%;
+        width: 100%; }
+        /* line 85, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/_framework/css/neat/grid/span-columns */
+        .row .col-6:last-child {
+          margin-right: 0 !important; } }
+  /* line 21, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/site/grid */
+  .row .col-7 {
+    margin: 0;
+    float: left;
+    display: block;
+    margin-right: 2.3576515979%;
+    width: 57.3509785009%; }
+    /* line 85, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/_framework/css/neat/grid/span-columns */
+    .row .col-7:last-child {
+      margin-right: 0 !important; }
+    @media screen and (max-width: 767px)  {
+      .row .col-7 {
+        float: left;
+        display: block;
+        margin-right: 2.3576515979%;
+        width: 100%; }
+        /* line 85, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/_framework/css/neat/grid/span-columns */
+        .row .col-7:last-child {
+          margin-right: 0 !important; } }
+  /* line 21, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/site/grid */
+  .row .col-8 {
+    margin: 0;
+    float: left;
+    display: block;
+    margin-right: 2.3576515979%;
+    width: 65.8807828007%; }
+    /* line 85, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/_framework/css/neat/grid/span-columns */
+    .row .col-8:last-child {
+      margin-right: 0 !important; }
+    @media screen and (max-width: 767px)  {
+      .row .col-8 {
+        float: left;
+        display: block;
+        margin-right: 2.3576515979%;
+        width: 100%; }
+        /* line 85, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/_framework/css/neat/grid/span-columns */
+        .row .col-8:last-child {
+          margin-right: 0 !important; } }
+  /* line 21, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/site/grid */
+  .row .col-9 {
+    margin: 0;
+    float: left;
+    display: block;
+    margin-right: 2.3576515979%;
+    width: 74.4105871005%; }
+    /* line 85, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/_framework/css/neat/grid/span-columns */
+    .row .col-9:last-child {
+      margin-right: 0 !important; }
+    @media screen and (max-width: 767px)  {
+      .row .col-9 {
+        float: left;
+        display: block;
+        margin-right: 2.3576515979%;
+        width: 100%; }
+        /* line 85, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/_framework/css/neat/grid/span-columns */
+        .row .col-9:last-child {
+          margin-right: 0 !important; } }
+  /* line 21, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/site/grid */
+  .row .col-10 {
+    margin: 0;
+    float: left;
+    display: block;
+    margin-right: 2.3576515979%;
+    width: 82.9403914003%; }
+    /* line 85, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/_framework/css/neat/grid/span-columns */
+    .row .col-10:last-child {
+      margin-right: 0 !important; }
+    @media screen and (max-width: 767px)  {
+      .row .col-10 {
+        float: left;
+        display: block;
+        margin-right: 2.3576515979%;
+        width: 100%; }
+        /* line 85, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/_framework/css/neat/grid/span-columns */
+        .row .col-10:last-child {
+          margin-right: 0 !important; } }
+  /* line 21, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/site/grid */
+  .row .col-11 {
+    margin: 0;
+    float: left;
+    display: block;
+    margin-right: 2.3576515979%;
+    width: 91.4701957002%; }
+    /* line 85, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/_framework/css/neat/grid/span-columns */
+    .row .col-11:last-child {
+      margin-right: 0 !important; }
+    @media screen and (max-width: 767px)  {
+      .row .col-11 {
+        float: left;
+        display: block;
+        margin-right: 2.3576515979%;
+        width: 100%; }
+        /* line 85, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/_framework/css/neat/grid/span-columns */
+        .row .col-11:last-child {
+          margin-right: 0 !important; } }
+  /* line 21, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/site/grid */
+  .row .col-12 {
+    margin: 0;
+    float: left;
+    display: block;
+    margin-right: 2.3576515979%;
+    width: 100%; }
+    /* line 85, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/_framework/css/neat/grid/span-columns */
+    .row .col-12:last-child {
+      margin-right: 0 !important; }
+    @media screen and (max-width: 767px)  {
+      .row .col-12 {
+        float: left;
+        display: block;
+        margin-right: 2.3576515979%;
+        width: 100%; }
+        /* line 85, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/_framework/css/neat/grid/span-columns */
+        .row .col-12:last-child {
+          margin-right: 0 !important; } }
+  @media screen and (max-width: 767px)  {
+    /* line 35, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/site/grid */
+    .row .small-col-1 {
+      float: left;
+      display: block;
+      margin-right: 2.3576515979%;
+      width: 6.1721527019%; }
+      /* line 85, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/_framework/css/neat/grid/span-columns */
+      .row .small-col-1:last-child {
+        margin-right: 0 !important; }
+
+    /* line 35, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/site/grid */
+    .row .small-col-2 {
+      float: left;
+      display: block;
+      margin-right: 2.3576515979%;
+      width: 14.7019570017%; }
+      /* line 85, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/_framework/css/neat/grid/span-columns */
+      .row .small-col-2:last-child {
+        margin-right: 0 !important; }
+
+    /* line 35, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/site/grid */
+    .row .small-col-3 {
+      float: left;
+      display: block;
+      margin-right: 2.3576515979%;
+      width: 23.2317613015%; }
+      /* line 85, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/_framework/css/neat/grid/span-columns */
+      .row .small-col-3:last-child {
+        margin-right: 0 !important; }
+
+    /* line 35, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/site/grid */
+    .row .small-col-4 {
+      float: left;
+      display: block;
+      margin-right: 2.3576515979%;
+      width: 31.7615656014%; }
+      /* line 85, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/_framework/css/neat/grid/span-columns */
+      .row .small-col-4:last-child {
+        margin-right: 0 !important; }
+
+    /* line 35, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/site/grid */
+    .row .small-col-5 {
+      float: left;
+      display: block;
+      margin-right: 2.3576515979%;
+      width: 40.2913699012%; }
+      /* line 85, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/_framework/css/neat/grid/span-columns */
+      .row .small-col-5:last-child {
+        margin-right: 0 !important; }
+
+    /* line 35, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/site/grid */
+    .row .small-col-6 {
+      float: left;
+      display: block;
+      margin-right: 2.3576515979%;
+      width: 48.821174201%; }
+      /* line 85, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/_framework/css/neat/grid/span-columns */
+      .row .small-col-6:last-child {
+        margin-right: 0 !important; }
+
+    /* line 35, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/site/grid */
+    .row .small-col-7 {
+      float: left;
+      display: block;
+      margin-right: 2.3576515979%;
+      width: 57.3509785009%; }
+      /* line 85, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/_framework/css/neat/grid/span-columns */
+      .row .small-col-7:last-child {
+        margin-right: 0 !important; }
+
+    /* line 35, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/site/grid */
+    .row .small-col-8 {
+      float: left;
+      display: block;
+      margin-right: 2.3576515979%;
+      width: 65.8807828007%; }
+      /* line 85, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/_framework/css/neat/grid/span-columns */
+      .row .small-col-8:last-child {
+        margin-right: 0 !important; }
+
+    /* line 35, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/site/grid */
+    .row .small-col-9 {
+      float: left;
+      display: block;
+      margin-right: 2.3576515979%;
+      width: 74.4105871005%; }
+      /* line 85, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/_framework/css/neat/grid/span-columns */
+      .row .small-col-9:last-child {
+        margin-right: 0 !important; }
+
+    /* line 35, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/site/grid */
+    .row .small-col-10 {
+      float: left;
+      display: block;
+      margin-right: 2.3576515979%;
+      width: 82.9403914003%; }
+      /* line 85, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/_framework/css/neat/grid/span-columns */
+      .row .small-col-10:last-child {
+        margin-right: 0 !important; }
+
+    /* line 35, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/site/grid */
+    .row .small-col-11 {
+      float: left;
+      display: block;
+      margin-right: 2.3576515979%;
+      width: 91.4701957002%; }
+      /* line 85, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/_framework/css/neat/grid/span-columns */
+      .row .small-col-11:last-child {
+        margin-right: 0 !important; }
+
+    /* line 35, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/site/grid */
+    .row .small-col-12 {
+      float: left;
+      display: block;
+      margin-right: 2.3576515979%;
+      width: 100%; }
+      /* line 85, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/_framework/css/neat/grid/span-columns */
+      .row .small-col-12:last-child {
+        margin-right: 0 !important; }
+ }
+
+/* line 43, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/site/grid */
+.table-row {
+  width: 100%;
+  display: table;
+  width: 100%;
+  table-layout: fixed; }
+  /* line 48, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/site/grid */
+  .table-row .col-1 {
+    display: table-cell;
+    width: 8.3333333333%; }
+    @media screen and (max-width: 767px)  {
+      .table-row .col-1 {
+        display: table-cell;
+        width: 100%; } }
+  /* line 48, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/site/grid */
+  .table-row .col-2 {
+    display: table-cell;
+    width: 16.6666666667%; }
+    @media screen and (max-width: 767px)  {
+      .table-row .col-2 {
+        display: table-cell;
+        width: 100%; } }
+  /* line 48, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/site/grid */
+  .table-row .col-3 {
+    display: table-cell;
+    width: 25%; }
+    @media screen and (max-width: 767px)  {
+      .table-row .col-3 {
+        display: table-cell;
+        width: 100%; } }
+  /* line 48, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/site/grid */
+  .table-row .col-4 {
+    display: table-cell;
+    width: 33.3333333333%; }
+    @media screen and (max-width: 767px)  {
+      .table-row .col-4 {
+        display: table-cell;
+        width: 100%; } }
+  /* line 48, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/site/grid */
+  .table-row .col-5 {
+    display: table-cell;
+    width: 41.6666666667%; }
+    @media screen and (max-width: 767px)  {
+      .table-row .col-5 {
+        display: table-cell;
+        width: 100%; } }
+  /* line 48, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/site/grid */
+  .table-row .col-6 {
+    display: table-cell;
+    width: 50%; }
+    @media screen and (max-width: 767px)  {
+      .table-row .col-6 {
+        display: table-cell;
+        width: 100%; } }
+  /* line 48, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/site/grid */
+  .table-row .col-7 {
+    display: table-cell;
+    width: 58.3333333333%; }
+    @media screen and (max-width: 767px)  {
+      .table-row .col-7 {
+        display: table-cell;
+        width: 100%; } }
+  /* line 48, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/site/grid */
+  .table-row .col-8 {
+    display: table-cell;
+    width: 66.6666666667%; }
+    @media screen and (max-width: 767px)  {
+      .table-row .col-8 {
+        display: table-cell;
+        width: 100%; } }
+  /* line 48, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/site/grid */
+  .table-row .col-9 {
+    display: table-cell;
+    width: 75%; }
+    @media screen and (max-width: 767px)  {
+      .table-row .col-9 {
+        display: table-cell;
+        width: 100%; } }
+  /* line 48, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/site/grid */
+  .table-row .col-10 {
+    display: table-cell;
+    width: 83.3333333333%; }
+    @media screen and (max-width: 767px)  {
+      .table-row .col-10 {
+        display: table-cell;
+        width: 100%; } }
+  /* line 48, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/site/grid */
+  .table-row .col-11 {
+    display: table-cell;
+    width: 91.6666666667%; }
+    @media screen and (max-width: 767px)  {
+      .table-row .col-11 {
+        display: table-cell;
+        width: 100%; } }
+  /* line 48, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/site/grid */
+  .table-row .col-12 {
+    display: table-cell;
+    width: 100%; }
+    @media screen and (max-width: 767px)  {
+      .table-row .col-12 {
+        display: table-cell;
+        width: 100%; } }
+  @media screen and (min-width: 1025px) and (max-width: 90em)  {
+    /* line 61, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/site/grid */
+    .table-row .md-col-1 {
+      display: table-cell;
+      width: 8.3333333333%; }
+
+    /* line 61, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/site/grid */
+    .table-row .md-col-2 {
+      display: table-cell;
+      width: 16.6666666667%; }
+
+    /* line 61, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/site/grid */
+    .table-row .md-col-3 {
+      display: table-cell;
+      width: 25%; }
+
+    /* line 61, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/site/grid */
+    .table-row .md-col-4 {
+      display: table-cell;
+      width: 33.3333333333%; }
+
+    /* line 61, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/site/grid */
+    .table-row .md-col-5 {
+      display: table-cell;
+      width: 41.6666666667%; }
+
+    /* line 61, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/site/grid */
+    .table-row .md-col-6 {
+      display: table-cell;
+      width: 50%; }
+
+    /* line 61, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/site/grid */
+    .table-row .md-col-7 {
+      display: table-cell;
+      width: 58.3333333333%; }
+
+    /* line 61, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/site/grid */
+    .table-row .md-col-8 {
+      display: table-cell;
+      width: 66.6666666667%; }
+
+    /* line 61, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/site/grid */
+    .table-row .md-col-9 {
+      display: table-cell;
+      width: 75%; }
+
+    /* line 61, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/site/grid */
+    .table-row .md-col-10 {
+      display: table-cell;
+      width: 83.3333333333%; }
+
+    /* line 61, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/site/grid */
+    .table-row .md-col-11 {
+      display: table-cell;
+      width: 91.6666666667%; }
+
+    /* line 61, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/site/grid */
+    .table-row .md-col-12 {
+      display: table-cell;
+      width: 100%; }
+ }
+  @media screen and (max-width: 767px)  {
+    .table-row {
+      display: block; }
+      /* line 15, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/_framework/css/bourbon/addons/clearfix */
+      .table-row:after {
+        content: "";
+        display: table;
+        clear: both; }
+      /* line 73, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/site/grid */
+      .table-row .small-col-1 {
+        float: left;
+        display: block;
+        margin-right: 2.3576515979%;
+        width: 6.1721527019%; }
+        /* line 85, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/_framework/css/neat/grid/span-columns */
+        .table-row .small-col-1:last-child {
+          margin-right: 0 !important; }
+      /* line 73, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/site/grid */
+      .table-row .small-col-2 {
+        float: left;
+        display: block;
+        margin-right: 2.3576515979%;
+        width: 14.7019570017%; }
+        /* line 85, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/_framework/css/neat/grid/span-columns */
+        .table-row .small-col-2:last-child {
+          margin-right: 0 !important; }
+      /* line 73, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/site/grid */
+      .table-row .small-col-3 {
+        float: left;
+        display: block;
+        margin-right: 2.3576515979%;
+        width: 23.2317613015%; }
+        /* line 85, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/_framework/css/neat/grid/span-columns */
+        .table-row .small-col-3:last-child {
+          margin-right: 0 !important; }
+      /* line 73, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/site/grid */
+      .table-row .small-col-4 {
+        float: left;
+        display: block;
+        margin-right: 2.3576515979%;
+        width: 31.7615656014%; }
+        /* line 85, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/_framework/css/neat/grid/span-columns */
+        .table-row .small-col-4:last-child {
+          margin-right: 0 !important; }
+      /* line 73, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/site/grid */
+      .table-row .small-col-5 {
+        float: left;
+        display: block;
+        margin-right: 2.3576515979%;
+        width: 40.2913699012%; }
+        /* line 85, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/_framework/css/neat/grid/span-columns */
+        .table-row .small-col-5:last-child {
+          margin-right: 0 !important; }
+      /* line 73, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/site/grid */
+      .table-row .small-col-6 {
+        float: left;
+        display: block;
+        margin-right: 2.3576515979%;
+        width: 48.821174201%; }
+        /* line 85, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/_framework/css/neat/grid/span-columns */
+        .table-row .small-col-6:last-child {
+          margin-right: 0 !important; }
+      /* line 73, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/site/grid */
+      .table-row .small-col-7 {
+        float: left;
+        display: block;
+        margin-right: 2.3576515979%;
+        width: 57.3509785009%; }
+        /* line 85, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/_framework/css/neat/grid/span-columns */
+        .table-row .small-col-7:last-child {
+          margin-right: 0 !important; }
+      /* line 73, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/site/grid */
+      .table-row .small-col-8 {
+        float: left;
+        display: block;
+        margin-right: 2.3576515979%;
+        width: 65.8807828007%; }
+        /* line 85, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/_framework/css/neat/grid/span-columns */
+        .table-row .small-col-8:last-child {
+          margin-right: 0 !important; }
+      /* line 73, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/site/grid */
+      .table-row .small-col-9 {
+        float: left;
+        display: block;
+        margin-right: 2.3576515979%;
+        width: 74.4105871005%; }
+        /* line 85, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/_framework/css/neat/grid/span-columns */
+        .table-row .small-col-9:last-child {
+          margin-right: 0 !important; }
+      /* line 73, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/site/grid */
+      .table-row .small-col-10 {
+        float: left;
+        display: block;
+        margin-right: 2.3576515979%;
+        width: 82.9403914003%; }
+        /* line 85, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/_framework/css/neat/grid/span-columns */
+        .table-row .small-col-10:last-child {
+          margin-right: 0 !important; }
+      /* line 73, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/site/grid */
+      .table-row .small-col-11 {
+        float: left;
+        display: block;
+        margin-right: 2.3576515979%;
+        width: 91.4701957002%; }
+        /* line 85, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/_framework/css/neat/grid/span-columns */
+        .table-row .small-col-11:last-child {
+          margin-right: 0 !important; }
+      /* line 73, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/site/grid */
+      .table-row .small-col-12 {
+        float: left;
+        display: block;
+        margin-right: 2.3576515979%;
+        width: 100%; }
+        /* line 85, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/_framework/css/neat/grid/span-columns */
+        .table-row .small-col-12:last-child {
+          margin-right: 0 !important; } }
+  /* line 79, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/site/grid */
+  .table-row *[vertical="top"] {
+    vertical-align: top; }
+  /* line 86, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/site/grid */
+  .table-row *[vertical="center"], .table-row *[vertical="middle"] {
+    vertical-align: middle; }
+  /* line 90, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/site/grid */
+  .table-row *[vertical="bottom"] {
+    vertical-align: bottom; }
+
+/* line 101, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/site/grid */
+.shift-1 {
+  margin-left: 8.5298042998%; }
+
+/* line 101, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/site/grid */
+.shift-2 {
+  margin-left: 17.0596085997%; }
+
+/* line 101, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/site/grid */
+.shift-3 {
+  margin-left: 25.5894128995%; }
+
+/* line 101, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/site/grid */
+.shift-4 {
+  margin-left: 34.1192171993%; }
+
+/* line 101, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/site/grid */
+.shift-5 {
+  margin-left: 42.6490214991%; }
+
+/* line 101, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/site/grid */
+.shift-6 {
+  margin-left: 51.178825799%; }
+
+/* line 101, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/site/grid */
+.shift-7 {
+  margin-left: 59.7086300988%; }
+
+/* line 101, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/site/grid */
+.shift-8 {
+  margin-left: 68.2384343986%; }
+
+/* line 101, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/site/grid */
+.shift-9 {
+  margin-left: 76.7682386985%; }
+
+/* line 101, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/site/grid */
+.shift-10 {
+  margin-left: 85.2980429983%; }
+
+/* line 101, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/site/grid */
+.shift-11 {
+  margin-left: 93.8278472981%; }
+
+/* line 101, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/site/grid */
+.shift-12 {
+  margin-left: 102.3576515979%; }
+
+/* -----------------------------------------
+   Variables: Branding / Colors / Fonts
+----------------------------------------- */
+/* -----------------------------------------
+   Mixins
+----------------------------------------- */
+/* line 80, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/app.scss */
+.btn {
+  display: inline-block;
+  border-radius: 100em;
+  border: solid 2px #454e53;
+  color: #454e53;
+  background-color: transparent;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  font-weight: 900;
+  padding: 1em 2em 1em;
+  font-size: 16px;
+  font-size: 1.6rem;
+  line-height: 1;
+  white-space: nowrap;
+  transition: all 0.2s ease-in-out; }
+  @media screen and (max-width: max-width 767px 12) {
+    .btn {
+      font-size: 12px;
+      font-size: 1.2rem; } }
+  /* line 75, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/app.scss */
+  .btn:hover {
+    color: #ca2330;
+    border-color: #ca2330; }
+  /* line 82, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/app.scss */
+  .btn .icon {
+    fill: #454e53; }
+
+/* -----------------------------------------
+   General
+----------------------------------------- */
+/* line 90, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/app.scss */
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  font-smoothing: antialiased; }
+
+/* line 96, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/app.scss */
+html {
+  font-size: 10px; }
+  @media screen and (min-width: 1025px) and (max-width: 90em)  {
+    html {
+      font-size: 9px; } }
+  @media screen and (min-width: 768px) and (max-width: 1024px)  {
+    html {
+      font-size: 8px; } }
+  @media screen and (max-width: 767px)  {
+    html {
+      font-size: 7px; } }
+
+/* line 109, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/app.scss */
+img {
+  display: inline-block;
+  max-width: 100%;
+  margin: 0px;
+  height: auto; }
+
+/* -----------------------------------------
+   Typography
+----------------------------------------- */
+/* line 121, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/app.scss */
+body, table {
+  font-size: 62.5%;
+  font-family: 'proxima-nova', Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  color: #454e53; }
+
+/* line 128, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/app.scss */
+p, ul, ol {
+  font-size: 20px;
+  font-size: 2rem; }
+  @media screen and (max-width: max-width 767px 12) {
+    p, ul, ol {
+      font-size: 15px;
+      font-size: 1.5rem; } }
+
+/* line 132, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/app.scss */
+p {
+  margin: 0 0 0.75em; }
+
+/* line 137, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/app.scss */
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out; }
+  /* line 141, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/app.scss */
+  a:hover {
+    color: #ca2330; }
+
+/* -----------------------------------------
+   Headers & Header types
+----------------------------------------- */
+/* line 150, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/app.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'museo', Helvetica, Arial, sans-serif;
+  color: #454e53;
+  text-rendering: optimizeLegibility;
+  margin: 32px 0px 16px;
+  margin: 2rem 0rem 1rem;
+  line-height: 1.1; }
+  /* line 156, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/app.scss */
+  h1 a, a h1, h2 a, a h2, h3 a, a h3, h4 a, a h4, h5 a, a h5, h6 a, a h6 {
+    display: block;
+    color: #454e53;
+    transition: color 0.3s; }
+    /* line 160, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/app.scss */
+    h1 a:hover, a h1:hover, h2 a:hover, a h2:hover, h3 a:hover, a h3:hover, h4 a:hover, a h4:hover, h5 a:hover, a h5:hover, h6 a:hover, a h6:hover {
+      color: #ca2330;
+      text-decoration: none; }
+
+/* line 167, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/app.scss */
+h2 {
+  font-size: 24px;
+  font-size: 2.4rem; }
+  @media screen and (max-width: max-width 767px 12) {
+    h2 {
+      font-size: 18px;
+      font-size: 1.8rem; } }
+
+/* -----------------------------------------
+   Navigation
+----------------------------------------- */
+/* line 2, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/modules/navigation */
+#navigation {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 5;
+  border-bottom: solid 1px #d9dee5;
+  padding: 16px;
+  padding: 1rem;
+  overflow: hidden;
+  display: block;
+  width: 100%;
+  height: 104px;
+  height: 6.5rem;
+  margin: 0px auto; }
+  @media screen and (max-width: 767px)  {
+    #navigation {
+      height: 136px;
+      height: 8.5rem; } }
+  /* line 19, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/modules/navigation */
+  #navigation #logo, #navigation #menu {
+    display: block;
+    float: left;
+    vertical-align: middle; }
+  /* line 25, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/modules/navigation */
+  #navigation #logo {
+    width: 70%;
+    height: 80px;
+    height: 5rem;
+    height: 100%; }
+    /* line 29, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/modules/navigation */
+    #navigation #logo svg {
+      display: block;
+      overflow: visible;
+      height: 100%;
+      float: left; }
+      /* line 34, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/modules/navigation */
+      #navigation #logo svg.symbol {
+        width: 80px;
+        width: 5rem; }
+      /* line 37, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/modules/navigation */
+      #navigation #logo svg.text {
+        margin-left: 16px;
+        margin-left: 1rem;
+        width: 128px;
+        width: 8rem; }
+        /* line 40, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/modules/navigation */
+        #navigation #logo svg.text path {
+          opacity: 0; }
+      /* line 44, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/modules/navigation */
+      #navigation #logo svg #circle, #navigation #logo svg #rocket, #navigation #logo svg #circle2 {
+        opacity: 0;
+        -webkit-transform-origin: 50% 50%;
+        -ms-transform-origin: 50% 50%;
+        transform-origin: 50% 50%; }
+      /* line 48, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/modules/navigation */
+      #navigation #logo svg #beam-1, #navigation #logo svg #beam-2 {
+        opacity: 0;
+        -webkit-transform-origin: 100% 100%;
+        -ms-transform-origin: 100% 100%;
+        transform-origin: 100% 100%; }
+      /* line 52, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/modules/navigation */
+      #navigation #logo svg #circle {
+        z-index: 2; }
+      /* line 55, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/modules/navigation */
+      #navigation #logo svg #circle2 {
+        z-index: 1; }
+  /* line 63, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/modules/navigation */
+  #navigation #menu {
+    width: 30%;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    font-weight: 900;
+    font-size: 16px;
+    font-size: 1.6rem;
+    color: #454e53;
+    text-align: right;
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%); }
+    @media screen and (max-width: max-width 767px 12) {
+      #navigation #menu {
+        font-size: 12px;
+        font-size: 1.2rem; } }
+    /* line 73, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/modules/navigation */
+    #navigation #menu span, #navigation #menu svg {
+      opacity: 0; }
+    /* line 76, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/modules/navigation */
+    #navigation #menu span {
+      display: inline-block;
+      position: relative; }
+      /* line 79, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/modules/navigation */
+      #navigation #menu span span {
+        display: block; }
+      /* line 82, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/modules/navigation */
+      #navigation #menu span .less {
+        display: none;
+        position: absolute;
+        left: 0;
+        top: 0;
+        -webkit-transform: translateY(-300%);
+        -ms-transform: translateY(-300%);
+        transform: translateY(-300%); }
+    /* line 90, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/modules/navigation */
+    #navigation #menu svg {
+      overflow: visible;
+      position: absolute;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%);
+      -webkit-transform-origin: 50% 50%;
+      -ms-transform-origin: 50% 50%;
+      transform-origin: 50% 50%;
+      transition: all 0.4s ease-in-out;
+      width: 32px;
+      width: 2rem;
+      height: 32px;
+      height: 2rem;
+      position: absolute;
+      left: -48px;
+      left: -3rem; }
+      /* line 99, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/modules/navigation */
+      #navigation #menu svg #icon-plus {
+        -webkit-transform-origin: 50% 50%;
+        -ms-transform-origin: 50% 50%;
+        transform-origin: 50% 50%; }
+      /* line 102, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/modules/navigation */
+      #navigation #menu svg #circle, #navigation #menu svg #circle2 {
+        -webkit-transform-origin: 50% 50%;
+        -ms-transform-origin: 50% 50%;
+        transform-origin: 50% 50%; }
+    /* line 106, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/modules/navigation */
+    #navigation #menu:hover, #navigation #menu.active {
+      color: #ca2330; }
+      /* line 108, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/modules/navigation */
+      #navigation #menu:hover svg, #navigation #menu.active svg {
+        fill: #ca2330; }
+    /* line 113, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/modules/navigation */
+    #navigation #menu.active svg {
+      -webkit-transform: translateY(-50%) rotateZ(45deg);
+      -ms-transform: translateY(-50%) rotateZ(45deg);
+      transform: translateY(-50%) rotateZ(45deg); }
+  /* line 119, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/modules/navigation */
+  #navigation.skip-intro svg, #navigation.skip-intro svg path, #navigation.skip-intro span {
+    opacity: 1 !important; }
+
+/* line 124, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/modules/navigation */
+ul.nav {
+  margin: 0px;
+  padding: 0px;
+  list-style-type: none;
+  float: right; }
+  /* line 129, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/modules/navigation */
+  ul.nav li {
+    display: inline-block;
+    float: left;
+    margin-left: 5px; }
+    /* line 133, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/modules/navigation */
+    ul.nav li a {
+      font-weight: 900;
+      background-color: #005580;
+      color: #fff;
+      display: block;
+      padding: 0px 10px;
+      line-height: 30px; }
+
+/* line 146, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/modules/navigation */
+[data-effect=circle-pulse] svg .circle-pulse {
+  -webkit-transform-origin: 50% 50%;
+  -ms-transform-origin: 50% 50%;
+  transform-origin: 50% 50%; }
+
+/* line 152, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/modules/navigation */
+body.utvecklare-sokes #navigation, table.utvecklare-sokes #navigation {
+  background: #FFF;
+  position: relative; }
+
+/* -----------------------------------------
+   Articles
+----------------------------------------- */
+/* line 206, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/app.scss */
+#main {
+  overflow: hidden;
+  padding-top: 118.4px;
+  padding-top: 7.4rem; }
+  /* line 211, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/app.scss */
+  #main > article:nth-child(even) {
+    background: #f4f6f8; }
+  @media screen and (max-width: 767px)  {
+    #main > article {
+      padding-top: 192px;
+      padding-top: 12rem; } }
+  /* line 218, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/app.scss */
+  #main article {
+    position: relative;
+    padding: 96px 96px;
+    padding: 6rem 6rem; }
+    @media screen and (min-width: 1025px) and (max-width: 90em)  {
+      #main article {
+        padding: 96px 0px 64px;
+        padding: 6rem 0rem 4rem; } }
+    @media screen and (max-width: 767px)  {
+      #main article {
+        padding: 64px 0px;
+        padding: 4rem 0rem; } }
+    /* line 235, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/app.scss */
+    #main article header, #main article section.text, #main article section.figure, #main article figcaption, #main article section.video, #main article footer, #main article section.link {
+      max-width: 1280px;
+      max-width: 80rem;
+      margin: auto;
+      margin-top: 64px;
+      margin-top: 4rem; }
+      /* line 240, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/app.scss */
+      #main article header:first-child, #main article section.text:first-child, #main article section.figure:first-child, #main article figcaption:first-child, #main article section.video:first-child, #main article footer:first-child, #main article section.link:first-child {
+        margin-top: 0 !important; }
+      @media screen and (min-width: 1025px) and (max-width: 90em)  {
+        #main article header, #main article section.text, #main article section.figure, #main article figcaption, #main article section.video, #main article footer, #main article section.link {
+          max-width: 1280px;
+          max-width: 80rem; } }
+    /* line 248, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/app.scss */
+    #main article [data-intro] {
+      transition: opacity 0.4s ease-in;
+      opacity: 0; }
+      /* line 251, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/app.scss */
+      body.loaded #main article [data-intro], table.loaded #main article [data-intro] {
+        opacity: 1; }
+    /* line 256, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/app.scss */
+    #main article header {
+      text-align: center;
+      margin-top: 48px;
+      margin-top: 3rem;
+      max-width: 1600px;
+      max-width: 100rem; }
+      /* line 260, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/app.scss */
+      #main article header h1 {
+        font-size: 62px;
+        font-size: 6.2rem;
+        font-weight: 900;
+        line-height: 1.1;
+        margin-top: 0; }
+        @media screen and (max-width: max-width 767px 12) {
+          #main article header h1 {
+            font-size: 46.5px;
+            font-size: 4.65rem; } }
+        @media screen and (max-width: 767px)  {
+          #main article header h1 {
+            font-size: 48px;
+            font-size: 4.8rem; }
+            @media screen and (max-width: max-width 767px 12) {
+              #main article header h1 {
+                font-size: 36px;
+                font-size: 3.6rem; } } }
+      /* line 264, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/app.scss */
+      #main article header h2 {
+        font-size: 22px;
+        font-size: 2.2rem;
+        margin-top: 0;
+        font-family: 'proxima-nova', Helvetica, Arial, sans-serif;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0.2rem;
+        line-height: 1.3;
+        color: #bac4d1; }
+        @media screen and (max-width: max-width 767px 12) {
+          #main article header h2 {
+            font-size: 16.5px;
+            font-size: 1.65rem; } }
+        @media screen and (max-width: 767px)  {
+          #main article header h2 {
+            font-size: 16px;
+            font-size: 1.6rem; }
+            @media screen and (max-width: max-width 767px 12) {
+              #main article header h2 {
+                font-size: 12px;
+                font-size: 1.2rem; } } }
+      /* line 269, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/app.scss */
+      #main article header + section.figure {
+        margin-top: 3%; }
+    /* line 275, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/app.scss */
+    #main article header, #main article section.text {
+      padding: 0px 64px;
+      padding: 0rem 4rem; }
+    /* line 280, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/app.scss */
+    #main article section.text .post_content {
+      -webkit-transform: translateX(1%);
+      -ms-transform: translateX(1%);
+      transform: translateX(1%); }
+    /* line 283, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/app.scss */
+    #main article section.text h1, #main article section.text h2, #main article section.text h3, #main article section.text h4, #main article section.text h5 {
+      text-transform: uppercase;
+      letter-spacing: 0.2rem;
+      font-family: 'proxima-nova', Helvetica, Arial, sans-serif;
+      font-size: 18px;
+      font-size: 1.8rem;
+      margin: 16px 0px 32px;
+      margin: 1rem 0rem 2rem;
+      color: #454e53; }
+      @media screen and (max-width: max-width 767px 12) {
+        #main article section.text h1, #main article section.text h2, #main article section.text h3, #main article section.text h4, #main article section.text h5 {
+          font-size: 13.5px;
+          font-size: 1.35rem; } }
+    /* line 290, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/app.scss */
+    #main article section.text blockquote {
+      border-left: solid 2px #e8ebf0;
+      padding: 16px 64px 8px;
+      padding: 1rem 4rem 0.5rem;
+      margin: 48px 48px;
+      margin: 3rem 3rem; }
+      /* line 294, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/app.scss */
+      #main article section.text blockquote p {
+        color: #7d90a8; }
+      /* line 297, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/app.scss */
+      #main article section.text blockquote cite {
+        font-style: normal;
+        color: #7d90a8;
+        text-transform: uppercase;
+        letter-spacing: 0.2rem;
+        font-weight: 900;
+        font-size: 13px;
+        font-size: 1.3rem; }
+        @media screen and (max-width: max-width 767px 12) {
+          #main article section.text blockquote cite {
+            font-size: 13px;
+            font-size: 1.3rem; } }
+    /* line 306, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/app.scss */
+    #main article section.text a {
+      display: inline-block;
+      border-bottom: solid 1px #d9dee5;
+      transition: color 0.3s ease-in-out, border 0.3s ease-in-out; }
+      /* line 311, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/app.scss */
+      #main article section.text a:hover {
+        border-color: #ca2330; }
+    /* line 315, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/app.scss */
+    #main article section.text + section.figure {
+      margin-top: 64px;
+      margin-top: 4rem; }
+    /* line 320, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/app.scss */
+    #main article section.figure, #main article figcaption, #main article section.video {
+      max-width: 1920px;
+      max-width: 120rem; }
+      @media screen and (min-width: 1025px) and (max-width: 90em)  {
+        #main article section.figure, #main article figcaption, #main article section.video {
+          max-width: 1440px;
+          max-width: 90rem; } }
+    /* line 328, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/app.scss */
+    #main article figcaption, #main article figure h5 {
+      font-size: 14px;
+      font-size: 1.4rem;
+      padding: 24px 0px;
+      padding: 1.5rem 0rem;
+      font-family: 'proxima-nova', Helvetica, Arial, sans-serif;
+      font-weight: 400; }
+      @media screen and (max-width: max-width 767px 12) {
+        #main article figcaption, #main article figure h5 {
+          font-size: 10.5px;
+          font-size: 1.05rem; } }
+      /* line 333, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/app.scss */
+      #main article figcaption strong, #main article figure h5 strong {
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0.2rem; }
+    /* line 338, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/app.scss */
+    #main article figcaption {
+      padding-left: 24px;
+      padding-left: 1.5rem;
+      padding-right: 24px;
+      padding-right: 1.5rem;
+      border-bottom: solid 1px #d9dee5;
+      text-align: center; }
+      @media screen and (max-width: 767px)  {
+        #main article figcaption {
+          display: none; } }
+    /* line 347, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/app.scss */
+    #main article section.figure {
+      margin-bottom: 0;
+      margin-top: 0; }
+      /* line 350, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/app.scss */
+      #main article section.figure + section.figure {
+        margin-top: 2.3%; }
+        @media screen and (min-width: 60rem)  {
+          #main article section.figure + section.figure {
+            margin-top: 48px;
+            margin-top: 3rem; } }
+      /* line 359, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/app.scss */
+      #main article section.figure figure {
+        display: block;
+        position: relative; }
+        @media screen and (max-width: 767px)  {
+          #main article section.figure figure {
+            margin-top: 0px;
+            margin-top: 0rem; } }
+        /* line 365, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/app.scss */
+        #main article section.figure figure a {
+          display: block; }
+        /* line 368, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/app.scss */
+        #main article section.figure figure img {
+          display: block; }
+        /* line 371, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/app.scss */
+        #main article section.figure figure figcaption {
+          border-bottom: none;
+          margin: 0 !important;
+          transition: opacity 0.3s ease-out;
+          position: absolute;
+          z-index: 997;
+          opacity: 0;
+          left: 0;
+          bottom: 0;
+          right: 0;
+          height: 100%;
+          top: 0;
+          color: #FFF;
+          line-height: 1.4;
+          padding: 0 !important;
+          background-color: rgba(69, 78, 83, 0.2);
+          background-image: linear-gradient(rgba(69, 78, 83, 0.2), rgba(23, 26, 27, 0.5)); }
+          /* line 387, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/app.scss */
+          #main article section.figure figure figcaption h5 {
+            background: transparent;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            padding: 24px;
+            padding: 1.5rem;
+            text-align: left;
+            line-height: 1.5;
+            color: #FFF;
+            margin: 0; }
+          @media screen and (max-width: 767px)  {
+            #main article section.figure figure figcaption {
+              display: none; } }
+        /* line 404, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/app.scss */
+        #main article section.figure figure:hover figcaption {
+          opacity: 1; }
+      /* line 410, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/app.scss */
+      #main article section.figure + figcaption {
+        margin-top: 0 !important; }
+    /* line 414, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/app.scss */
+    #main article section.video {
+      transition: all 0.2s ease-in-out; }
+      /* line 416, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/app.scss */
+      #main article section.video.playing {
+        max-width: 1920px;
+        max-width: 120rem; }
+        @media screen and (min-width: 1025px) and (max-width: 90em)  {
+          #main article section.video.playing {
+            max-width: 1600px;
+            max-width: 100rem; } }
+      @media screen and (max-width: 767px)  {
+        /* line 423, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/app.scss */
+        #main article section.video:first-child {
+          margin-top: -2rem; }
+ }
+    /* line 429, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/app.scss */
+    #main article .video-wrapper {
+      position: relative;
+      padding-bottom: 56.25%;
+      height: 0;
+      overflow: hidden;
+      max-width: 100%;
+      height: auto; }
+      /* line 430, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/app.scss */
+      #main article .video-wrapper iframe, #main article .video-wrapper object, #main article .video-wrapper embed {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%; }
+    /* line 433, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/app.scss */
+    #main article section.link {
+      text-align: center; }
+    /* line 437, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/app.scss */
+    #main article footer {
+      text-align: center; }
+    /* line 441, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/app.scss */
+    #main article aside.actions {
+      position: relative;
+      position: absolute;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%);
+      right: -96px;
+      right: -6rem;
+      transition: right 0.4s ease-out; }
+      /* line 446, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/app.scss */
+      #main article aside.actions a {
+        display: block;
+        width: 96px;
+        width: 6rem;
+        height: 96px;
+        height: 6rem;
+        margin-top: 32px;
+        margin-top: 2rem;
+        transition: opacity 0.3s;
+        opacity: 0.2; }
+        /* line 453, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/app.scss */
+        #main article aside.actions a:first-child {
+          margin-top: 0; }
+        /* line 456, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/app.scss */
+        #main article aside.actions a:hover {
+          opacity: 1; }
+        /* line 459, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/app.scss */
+        #main article aside.actions a.close {
+          position: absolute;
+          bottom: 0;
+          opacity: 0;
+          z-index: 999;
+          display: none; }
+    /* line 469, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/app.scss */
+    #main article time {
+      position: absolute;
+      bottom: 32px;
+      bottom: 2rem;
+      left: 32px;
+      left: 2rem;
+      text-transform: uppercase;
+      letter-spacing: 0.2rem;
+      font-size: 14px;
+      font-size: 1.4rem;
+      color: #d9dee5; }
+      @media screen and (max-width: max-width 767px 12) {
+        #main article time {
+          font-size: 10.5px;
+          font-size: 1.05rem; } }
+      @media screen and (max-width: 767px)  {
+        #main article time {
+          display: block;
+          text-align: center;
+          position: relative;
+          left: 0;
+          bottom: 0;
+          width: 100%;
+          margin: 48px 0px 0px;
+          margin: 3rem 0rem 0rem; } }
+    /* line 486, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/app.scss */
+    #main article .comments-toggle {
+      position: absolute;
+      bottom: 32px;
+      bottom: 2rem;
+      right: 32px;
+      right: 2rem;
+      color: #bac4d1; }
+      /* line 491, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/app.scss */
+      #main article .comments-toggle svg, #main article .comments-toggle span {
+        display: inline-block; }
+      /* line 494, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/app.scss */
+      #main article .comments-toggle svg {
+        fill: #bac4d1;
+        transition: fill 0.3s ease-in-out;
+        height: 38.4px;
+        height: 2.4rem;
+        -webkit-transform: translateY(30%) translateX(-20%);
+        -ms-transform: translateY(30%) translateX(-20%);
+        transform: translateY(30%) translateX(-20%); }
+      /* line 500, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/app.scss */
+      #main article .comments-toggle span {
+        text-transform: uppercase;
+        letter-spacing: 0.2rem;
+        font-size: 14px;
+        font-size: 1.4rem; }
+        @media screen and (max-width: max-width 767px 12) {
+          #main article .comments-toggle span {
+            font-size: 10.5px;
+            font-size: 1.05rem; } }
+      /* line 504, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/app.scss */
+      #main article .comments-toggle:hover {
+        color: #ca2330; }
+        /* line 506, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/app.scss */
+        #main article .comments-toggle:hover svg {
+          fill: #ca2330; }
+
+/* line 516, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/app.scss */
+body.blog #main article section.figure.row, table.blog #main article section.figure.row {
+  margin-top: 64px;
+  margin-top: 4rem; }
+/* line 520, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/app.scss */
+body.blog #main article aside.actions a:last-child, table.blog #main article aside.actions a:last-child {
+  transition: -webkit-transform 0.4s ease-out;
+  transition: transform 0.4s ease-out;
+  -webkit-transform: translateX(100%);
+  -ms-transform: translateX(100%);
+  transform: translateX(100%); }
+/* line 526, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/app.scss */
+body.blog #main article:hover aside.actions, table.blog #main article:hover aside.actions {
+  right: 32px;
+  right: 2rem; }
+  /* line 528, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/app.scss */
+  body.blog #main article:hover aside.actions a:last-child, table.blog #main article:hover aside.actions a:last-child {
+    -webkit-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0); }
+
+@media screen and (max-width: 767px)  {
+  body.single #main, table.single #main {
+    padding-top: 192px;
+    padding-top: 12rem; } }
+/* line 541, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/app.scss */
+body.single #main article, table.single #main article {
+  padding-bottom: 192px;
+  padding-bottom: 12rem; }
+  /* line 543, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/app.scss */
+  body.single #main article time, table.single #main article time {
+    display: none; }
+  /* line 546, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/app.scss */
+  body.single #main article .comments-toggle, table.single #main article .comments-toggle {
+    left: 0;
+    right: 0;
+    width: 100%;
+    text-align: center;
+    display: block; }
+
+/* line 557, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/app.scss */
+#main #related-posts {
+  border-top: solid 1px #d9dee5; }
+  /* line 559, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/app.scss */
+  #main #related-posts article {
+    vertical-align: middle; }
+    /* line 561, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/app.scss */
+    #main #related-posts article:first-child {
+      border-right: solid 1px #d9dee5; }
+    @media screen and (max-width: 767px)  {
+      #main #related-posts article {
+        border-bottom: solid 1px #d9dee5;
+        padding: 48px 16px;
+        padding: 3rem 1rem; }
+        /* line 567, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/app.scss */
+        #main #related-posts article:last-child {
+          border-bottom: none; } }
+    /* line 571, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/app.scss */
+    #main #related-posts article header {
+      margin-bottom: 0; }
+      /* line 573, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/app.scss */
+      #main #related-posts article header h1 {
+        font-size: 48px;
+        font-size: 4.8rem; }
+        @media screen and (max-width: max-width 767px 12) {
+          #main #related-posts article header h1 {
+            font-size: 36px;
+            font-size: 3.6rem; } }
+        @media screen and (max-width: 767px)  {
+          #main #related-posts article header h1 {
+            font-size: 36px;
+            font-size: 3.6rem; }
+            @media screen and (max-width: max-width 767px 12) {
+              #main #related-posts article header h1 {
+                font-size: 27px;
+                font-size: 2.7rem; } } }
+        @media screen and (max-width: 767px)  {
+          #main #related-posts article header h1 {
+            font-size: 36px;
+            font-size: 3.6rem; }
+            @media screen and (max-width: max-width 767px 12) {
+              #main #related-posts article header h1 {
+                font-size: 27px;
+                font-size: 2.7rem; } } }
+      @media screen and (max-width: 767px)  {
+        #main #related-posts article header h2 {
+          font-size: 24px;
+          font-size: 2.4rem; }
+          @media screen and (max-width: max-width 767px 12) {
+            #main #related-posts article header h2 {
+              font-size: 18px;
+              font-size: 1.8rem; } } }
+      @media screen and (max-width: 767px)  {
+        #main #related-posts article header h2 {
+          font-size: 18px;
+          font-size: 1.8rem; }
+          @media screen and (max-width: max-width 767px 12) {
+            #main #related-posts article header h2 {
+              font-size: 13.5px;
+              font-size: 1.35rem; } } }
+
+/* line 594, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/app.scss */
+#comments_container {
+  transition: -webkit-transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+  transition-delay: 0.3s;
+  -webkit-transform: translateX(100%);
+  -ms-transform: translateX(100%);
+  transform: translateX(100%);
+  padding: 0px 32px;
+  padding: 0rem 2rem;
+  overflow: scroll;
+  box-shadow: -3px 0px 0px rgba(69, 78, 83, 0.1);
+  background: #FFF;
+  width: 40%;
+  min-width: 800px;
+  min-width: 50rem;
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  right: 0;
+  bottom: 0; }
+  @media screen and (max-width: 767px)  {
+    #comments_container {
+      min-width: 0px;
+      min-width: 0rem;
+      width: 90%; } }
+  /* line 613, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/app.scss */
+  #comments_container.active {
+    -webkit-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0); }
+  /* line 616, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/app.scss */
+  #comments_container header {
+    background: #f1f3f6;
+    margin: 0px -32px;
+    margin: 0rem -2rem;
+    margin: 0 -2rem !important;
+    padding: 2rem 2rem 1rem !important;
+    display: block;
+    border-bottom: solid 1px #d9dee5;
+    max-width: none;
+    text-align: left;
+    overflow: hidden; }
+    /* line 626, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/app.scss */
+    #comments_container header h4 {
+      font-size: 20px;
+      font-size: 2rem;
+      float: left;
+      margin: 0; }
+      @media screen and (max-width: max-width 767px 12) {
+        #comments_container header h4 {
+          font-size: 15px;
+          font-size: 1.5rem; } }
+    /* line 631, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/app.scss */
+    #comments_container header a.close {
+      font-size: 14px;
+      font-size: 1.4rem;
+      display: block;
+      float: right;
+      text-transform: uppercase;
+      letter-spacing: 0.2rem;
+      font-family: 'proxima-nova', Helvetica, Arial, sans-serif; }
+      @media screen and (max-width: max-width 767px 12) {
+        #comments_container header a.close {
+          font-size: 10.5px;
+          font-size: 1.05rem; } }
+
+/* line 641, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/app.scss */
+.overlay {
+  opacity: 0;
+  display: none;
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 998; }
+
+/* -----------------------------------------
+   Info
+----------------------------------------- */
+/* line 658, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/app.scss */
+#info {
+  background: #f1f3f6;
+  padding: 176px 64px 0px;
+  padding: 11rem 4rem 0rem;
+  margin-bottom: -128px;
+  margin-bottom: -8rem;
+  display: none; }
+  /* line 665, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/app.scss */
+  #info .container {
+    max-width: 90rem; }
+  /* line 668, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/app.scss */
+  #info .row {
+    margin-bottom: 48px;
+    margin-bottom: 3rem; }
+  /* line 671, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/app.scss */
+  #info .row, #info figure {
+    opacity: 0; }
+  /* line 674, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/app.scss */
+  #info h1 {
+    font-size: 96px;
+    font-size: 9.6rem;
+    font-weight: 900;
+    text-align: center; }
+    @media screen and (max-width: max-width 767px 12) {
+      #info h1 {
+        font-size: 72px;
+        font-size: 7.2rem; } }
+    @media screen and (min-width: 1025px) and (max-width: 90em)  {
+      #info h1 {
+        font-size: 72px;
+        font-size: 7.2rem; }
+        @media screen and (max-width: max-width 767px 12) {
+          #info h1 {
+            font-size: 54px;
+            font-size: 5.4rem; } } }
+    @media screen and (max-width: 767px)  {
+      #info h1 {
+        font-size: 64px;
+        font-size: 6.4rem; }
+        @media screen and (max-width: max-width 767px 12) {
+          #info h1 {
+            font-size: 48px;
+            font-size: 4.8rem; } } }
+  /* line 685, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/app.scss */
+  #info h2 {
+    margin: auto;
+    max-width: 640px;
+    max-width: 40rem;
+    position: relative;
+    color: #bac4d1;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem; }
+    /* line 692, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/app.scss */
+    #info h2 span {
+      text-transform: uppercase;
+      letter-spacing: 0.2rem;
+      font-family: 'proxima-nova', Helvetica, Arial, sans-serif;
+      font-size: 18px;
+      font-size: 1.8rem;
+      white-space: nowrap;
+      position: relative;
+      display: inline-block;
+      background: #f1f3f6;
+      z-index: 2;
+      padding: 0 10px; }
+      @media screen and (max-width: max-width 767px 12) {
+        #info h2 span {
+          font-size: 13.5px;
+          font-size: 1.35rem; } }
+    /* line 703, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/app.scss */
+    #info h2:before {
+      content: '';
+      z-index: 1;
+      position: absolute;
+      background: #bac4d1;
+      width: 100%;
+      height: 2px;
+      left: 0;
+      right: 0;
+      top: 50%; }
+  /* line 715, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/app.scss */
+  #info h3 {
+    font-size: 28px;
+    font-size: 2.8rem;
+    font-family: 'proxima-nova', Helvetica, Arial, sans-serif; }
+    @media screen and (max-width: max-width 767px 12) {
+      #info h3 {
+        font-size: 21px;
+        font-size: 2.1rem; } }
+  /* line 720, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/app.scss */
+  #info figure {
+    margin: auto;
+    max-width: 1760px;
+    max-width: 110rem; }
+    /* line 723, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/app.scss */
+    #info figure img {
+      display: block; }
+
+/* line 1, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/layout/actions */
+aside.actions {
+  overflow: visible;
+  z-index: 99; }
+  /* line 4, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/layout/actions */
+  aside.actions a {
+    display: block;
+    margin-top: 32px;
+    margin-top: 2rem; }
+  /* line 8, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/layout/actions */
+  aside.actions svg {
+    overflow: visible; }
+
+/* line 13, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/layout/actions */
+.icon-comment svg #comments {
+  -webkit-transform: translateX(0);
+  -ms-transform: translateX(0);
+  transform: translateX(0); }
+
+/* -----------------------------------------
+   ScrollReveal
+----------------------------------------- */
+/* line 733, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/app.scss */
+[data-sr] {
+  visibility: hidden; }
+
+/* -----------------------------------------
+   Who's a fancy box?
+----------------------------------------- */
+/* line 741, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/app.scss */
+.overlay {
+  opacity: 1;
+  background: rgba(255, 255, 255, 0.9);
+  transition: background-color 0.3s linear;
+  cursor: pointer; }
+  /* line 746, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/app.scss */
+  .overlay:hover {
+    opacity: 1;
+    background: rgba(255, 255, 255, 0.8); }
+  /* line 750, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/app.scss */
+  .overlay #close {
+    position: relative;
+    transition: all 0.5s ease-in;
+    opacity: 0;
+    z-index: 999;
+    position: fixed;
+    top: 50%;
+    left: 100%;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    -ms-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    width: auto;
+    display: block;
+    padding: 17.6px 32px 16px;
+    padding: 1.1rem 2rem 1rem; }
+    /* line 762, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/app.scss */
+    .overlay #close i, .overlay #close span {
+      -webkit-transform: translate3d(0, 0, 0);
+      -ms-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+      display: inline-block; }
+    /* line 766, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/app.scss */
+    .overlay #close span {
+      font-size: 16px;
+      font-size: 1.6rem;
+      color: #454e53;
+      text-transform: uppercase;
+      letter-spacing: 0.2rem; }
+      @media screen and (max-width: max-width 767px 12) {
+        .overlay #close span {
+          font-size: 12px;
+          font-size: 1.2rem; } }
+    /* line 771, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/app.scss */
+    .overlay #close i {
+      height: 20.8px;
+      height: 1.3rem;
+      width: 20.8px;
+      width: 1.3rem;
+      background: url(../images/icon-close-bare.svg);
+      background-size: cover;
+      margin-right: 10px;
+      -webkit-transform: translateY(10%);
+      -ms-transform: translateY(10%);
+      transform: translateY(10%); }
+    /* line 779, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/app.scss */
+    .overlay #close:after {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      border: solid 2px #454e53;
+      border-radius: 999px;
+      opacity: 0;
+      transition: all 0.5s ease-in-out; }
+    /* line 792, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/app.scss */
+    .overlay #close:hover:after {
+      -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+      transform: scale(1.1);
+      opacity: 1; }
+  /* line 800, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/app.scss */
+  .overlay.active:hover #close {
+    opacity: 1; }
+
+/* line 807, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/app.scss */
+body.overlay-active, table.overlay-active {
+  overflow: hidden; }
+
+/* line 811, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/app.scss */
+.fancybox-default-overlay {
+  transition: opacity 0.3s linear;
+  opacity: 0.9;
+  background: white; }
+  /* line 815, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/app.scss */
+  .fancybox-default-overlay:hover {
+    opacity: 0.7; }
+
+/* line 820, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/app.scss */
+.fancybox-wrap {
+  padding: 0px !important; }
+  @media screen and (max-width: 767px)  {
+    .fancybox-wrap {
+      margin: 20px !important; } }
+
+/* line 827, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/app.scss */
+.fancybox-inner {
+  border: none;
+  margin: 0px !important; }
+
+/* line 832, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/app.scss */
+.fancybox-default-skin-open {
+  box-shadow: none; }
+
+/* line 837, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/app.scss */
+.fancybox-title-outside-wrap {
+  position: relative;
+  margin-top: 10px;
+  color: #333;
+  text-shadow: none;
+  text-align: center; }
+
+/* line 845, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/app.scss */
+.fancybox-title-over-wrap {
+  display: block;
+  margin: 0;
+  background-color: rgba(69, 78, 83, 0);
+  background-image: linear-gradient(rgba(69, 78, 83, 0), rgba(23, 26, 27, 0.8));
+  right: 0;
+  padding-top: 80px;
+  font-family: 'proxima-nova', Helvetica, Arial, sans-serif; }
+  @media screen and (max-width: 767px)  {
+    .fancybox-title-over-wrap {
+      display: none !important; } }
+
+/* line 857, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/app.scss */
+.fancybox-default a.fancybox-close {
+  display: none;
+  background-image: url('../images/icon-cross.svg');
+  background-size: 100% 100%;
+  width: 40px;
+  width: 2.5rem;
+  height: 40px;
+  height: 2.5rem;
+  top: -96px;
+  top: -6rem;
+  right: -96px;
+  right: -6rem; }
+
+@media screen and (max-width: 767px)  {
+  .fancybox-default a.fancybox-nav {
+    display: none !important; } }
+/* line 871, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/app.scss */
+.fancybox-default a.fancybox-nav.fancybox-next span {
+  background-image: url('../images/icon-next.svg');
+  background-size: 100% 100%;
+  background-position: center center; }
+/* line 876, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/app.scss */
+.fancybox-default a.fancybox-nav.fancybox-prev span {
+  background-image: url('../images/icon-prev.svg');
+  background-size: 100% 100%;
+  background-position: center center; }
+
+/* line 887, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/app.scss */
+#devhunt figure {
+  margin: 0px;
+  padding: 0px; }
+/* line 892, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/app.scss */
+#devhunt .container {
+  max-width: 100%; }
+/* line 895, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/app.scss */
+#devhunt .table-row {
+  position: relative;
+  z-index: 1; }
+  @media screen and (min-width: 90.0625em)  {
+    #devhunt .table-row {
+      height: 40rem; } }
+/* line 902, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/app.scss */
+#devhunt #top {
+  position: relative;
+  z-index: 0; }
+  /* line 905, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/app.scss */
+  #devhunt #top article {
+    text-align: center;
+    padding: 0 !important; }
+    /* line 908, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/app.scss */
+    #devhunt #top article h1 {
+      font-size: 96px;
+      font-size: 9.6rem;
+      font-weight: 900;
+      color: #FFF;
+      margin-top: 0; }
+      @media screen and (max-width: max-width 767px 12) {
+        #devhunt #top article h1 {
+          font-size: 72px;
+          font-size: 7.2rem; } }
+      @media screen and (max-width: 767px)  {
+        #devhunt #top article h1 {
+          font-size: 64px;
+          font-size: 6.4rem; }
+          @media screen and (max-width: max-width 767px 12) {
+            #devhunt #top article h1 {
+              font-size: 48px;
+              font-size: 4.8rem; } } }
+  /* line 918, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/app.scss */
+  #devhunt #top .content {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    width: 100%;
+    text-align: center;
+    max-width: none;
+    overflow: hidden; }
+  /* line 925, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/app.scss */
+  #devhunt #top h2 {
+    margin: auto;
+    max-width: 560px;
+    max-width: 35rem;
+    position: relative;
+    color: #bac4d1;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    font-family: 'proxima-nova', Helvetica, Arial, sans-serif; }
+    /* line 934, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/app.scss */
+    #devhunt #top h2:before, #devhunt #top h2:after {
+      content: '';
+      z-index: 1;
+      position: absolute;
+      background: #bac4d1;
+      width: 100%;
+      height: 2px;
+      left: -20%;
+      width: 20%;
+      top: 50%; }
+    /* line 945, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/app.scss */
+    #devhunt #top h2:after {
+      left: auto;
+      right: -20%; }
+    @media (max-width 767px 12) {
+      #devhunt #top h2 {
+        font-size: 16px;
+        font-size: 1.6rem; }
+        @media screen and (max-width: max-width 767px 12) {
+          #devhunt #top h2 {
+            font-size: 12px;
+            font-size: 1.2rem; } }
+        /* line 953, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/app.scss */
+        #devhunt #top h2:before, #devhunt #top h2:after {
+          display: none !important;
+          width: 10%; } }
+/* line 960, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/app.scss */
+#devhunt #content {
+  background: #FFF;
+  position: relative;
+  z-index: 3; }
+@media screen and (max-width: 767px)  {
+  #devhunt .hide-mobile {
+    display: none; } }
+/* line 972, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/app.scss */
+#devhunt #video {
+  overflow: hidden;
+  position: absolute;
+  z-index: 0;
+  left: 0;
+  right: 0;
+  max-width: 100%;
+  margin: auto;
+  top: 0; }
+  /* line 982, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/app.scss */
+  #devhunt #video video {
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: block; }
+  /* line 988, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/app.scss */
+  #devhunt #video figure {
+    margin: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(69, 78, 83, 0.95);
+    z-index: 2; }
+/* line 999, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/app.scss */
+#devhunt .interactive-bg {
+  background-color: #FFF;
+  position: relative;
+  overflow: hidden; }
+  /* line 1003, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/app.scss */
+  #devhunt .interactive-bg figure {
+    margin: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 0;
+    background-size: cover;
+    background-position: center top;
+    display: none; }
+    /* line 1016, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/app.scss */
+    #devhunt .interactive-bg figure:after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 0;
+      background: rgba(69, 78, 83, 0.7); }
+  /* line 1029, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/app.scss */
+  #devhunt .interactive-bg .content {
+    text-align: center; }
+    /* line 1031, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/app.scss */
+    #devhunt .interactive-bg .content * {
+      transition: all 0.6s ease-in; }
+  /* line 1037, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/app.scss */
+  #devhunt .interactive-bg.hover .content * {
+    color: #FFF;
+    border-color: rgba(255, 255, 255, 0.2); }
+  /* line 1041, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/app.scss */
+  #devhunt .interactive-bg.hover .content span:hover {
+    border-color: white; }
+  /* line 1046, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/app.scss */
+  #devhunt .interactive-bg span {
+    cursor: pointer;
+    display: inline;
+    padding: 8px;
+    padding: 0.5rem;
+    border-bottom: solid 1px rgba(69, 78, 83, 0.2);
+    transition: all 0.6s ease-in; }
+    /* line 1052, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/app.scss */
+    #devhunt .interactive-bg span:hover {
+      border-color: #454e53; }
+/* line 1057, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/app.scss */
+#devhunt .box {
+  background: #FFF;
+  position: relative;
+  padding: 224px 0px;
+  padding: 14rem 0rem; }
+  @media screen and (min-width: 1025px) and (max-width: 90em)  {
+    #devhunt .box {
+      padding: 160px 0px;
+      padding: 10rem 0rem; } }
+  @media screen and (max-width: 767px)  {
+    #devhunt .box {
+      padding: 80px 32px;
+      padding: 5rem 2rem; } }
+  /* line 1067, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/app.scss */
+  #devhunt .box .sq {
+    width: 100%;
+    height: auto; }
+  /* line 1071, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/app.scss */
+  #devhunt .box.col-6 {
+    padding: 0 !important; }
+    /* line 1073, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/app.scss */
+    #devhunt .box.col-6 .content {
+      padding: 128px;
+      padding: 8rem; }
+      @media screen and (max-width: 767px)  {
+        #devhunt .box.col-6 .content {
+          padding: 64px 32px;
+          padding: 4rem 2rem; } }
+  /* line 1081, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/app.scss */
+  #devhunt .box .content {
+    max-width: 80rem;
+    text-align: left;
+    margin: auto; }
+    /* line 1085, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/app.scss */
+    #devhunt .box .content * {
+      transition: color 0.4s ease-out; }
+    /* line 1089, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/app.scss */
+    #devhunt .box .content h3 {
+      text-align: center;
+      text-transform: uppercase;
+      letter-spacing: 0.2rem;
+      font-size: 20px;
+      font-size: 2rem;
+      font-family: 'proxima-nova', Helvetica, Arial, sans-serif;
+      margin: 0px 0px 32px;
+      margin: 0rem 0rem 2rem; }
+      @media screen and (max-width: max-width 767px 12) {
+        #devhunt .box .content h3 {
+          font-size: 15px;
+          font-size: 1.5rem; } }
+    /* line 1096, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/app.scss */
+    #devhunt .box .content p {
+      font-size: 22px;
+      font-size: 2.2rem;
+      -webkit-transform: translateX(1%);
+      -ms-transform: translateX(1%);
+      transform: translateX(1%); }
+      @media screen and (max-width: max-width 767px 12) {
+        #devhunt .box .content p {
+          font-size: 16.5px;
+          font-size: 1.65rem; } }
+    /* line 1100, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/app.scss */
+    #devhunt .box .content img {
+      max-width: 320px;
+      max-width: 20rem;
+      padding: 0px 48px;
+      padding: 0rem 3rem;
+      margin: auto;
+      display: block;
+      margin-bottom: 48px;
+      margin-bottom: 3rem; }
+    /* line 1107, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/app.scss */
+    #devhunt .box .content ul.list {
+      padding: 0px;
+      padding: 0rem;
+      margin: 16px;
+      margin: 1rem;
+      font-size: 18px;
+      font-size: 1.8rem;
+      list-style-position: inside; }
+      @media screen and (max-width: max-width 767px 12) {
+        #devhunt .box .content ul.list {
+          font-size: 13.5px;
+          font-size: 1.35rem; } }
+      /* line 1112, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/app.scss */
+      #devhunt .box .content ul.list li {
+        position: relative;
+        padding-left: 48px;
+        padding-left: 3rem;
+        margin: 0px 0px 16px;
+        margin: 0rem 0rem 1rem; }
+        /* line 1116, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/app.scss */
+        #devhunt .box .content ul.list li:before {
+          content: '–';
+          position: absolute;
+          top: 0;
+          left: 0; }
+    /* line 1124, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/app.scss */
+    #devhunt .box .content.large {
+      margin-top: 96px;
+      margin-top: 6rem;
+      margin-bottom: 96px;
+      margin-bottom: 6rem; }
+      /* line 1127, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/app.scss */
+      #devhunt .box .content.large h3 {
+        font-size: 24px;
+        font-size: 2.4rem; }
+        @media screen and (max-width: max-width 767px 12) {
+          #devhunt .box .content.large h3 {
+            font-size: 18px;
+            font-size: 1.8rem; } }
+      /* line 1130, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/app.scss */
+      #devhunt .box .content.large p {
+        font-size: 22px;
+        font-size: 2.2rem; }
+        @media screen and (max-width: max-width 767px 12) {
+          #devhunt .box .content.large p {
+            font-size: 16.5px;
+            font-size: 1.65rem; } }
+    /* line 1135, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/app.scss */
+    #devhunt .box .content.small p {
+      font-size: 18px;
+      font-size: 1.8rem; }
+      @media screen and (max-width: max-width 767px 12) {
+        #devhunt .box .content.small p {
+          font-size: 13.5px;
+          font-size: 1.35rem; } }
+  /* line 1140, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/app.scss */
+  #devhunt .box.transparent {
+    background: transparent; }
+  /* line 1143, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/app.scss */
+  #devhunt .box.white {
+    background: #FFF; }
+  /* line 1146, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/app.scss */
+  #devhunt .box.red {
+    background: #ca2330; }
+  /* line 1149, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/app.scss */
+  #devhunt .box.light {
+    background: #f1f3f6; }
+  /* line 1152, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/app.scss */
+  #devhunt .box.dark {
+    background: #454e53;
+    color: #FFF; }
+    /* line 1155, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/app.scss */
+    #devhunt .box.dark h3 {
+      color: #FFF; }
+  /* line 1159, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/app.scss */
+  #devhunt .box.border-bottom {
+    border-bottom: solid 1px #d9dee5; }
+  /* line 1162, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/app.scss */
+  #devhunt .box.border-right {
+    border-right: solid 1px #d9dee5; }
+/* line 1167, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/app.scss */
+#devhunt .call-to-action .box {
+  transition: background-color 0.6s ease-in-out; }
+/* line 1171, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/app.scss */
+#devhunt .call-to-action:hover .box {
+  background: #40494d; }
+/* line 1177, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/app.scss */
+#devhunt p.center {
+  text-align: center;
+  margin: 0px; }
+/* line 1182, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/app.scss */
+#devhunt .ghost-button {
+  font-family: 'proxima-nova', Helvetica, Arial, sans-serif;
+  font-size: 22px;
+  font-size: 2.2rem;
+  background: transparent;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  font-weight: 900;
+  padding: 32px 64px;
+  padding: 2rem 4rem;
+  margin: auto;
+  margin-top: 64px;
+  margin-top: 4rem;
+  border: solid 2px #FFF;
+  border-radius: 999px;
+  display: inline-block;
+  transition: all 0.3s ease-in-out;
+  text-align: center;
+  color: #FFF; }
+  @media screen and (max-width: max-width 767px 12) {
+    #devhunt .ghost-button {
+      font-size: 16.5px;
+      font-size: 1.65rem; } }
+  /* line 1197, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/app.scss */
+  #devhunt .ghost-button:hover, #devhunt .ghost-button:active, #devhunt .ghost-button:visited {
+    background: #FFF;
+    color: #454e53; }
+/* line 1203, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/app.scss */
+#devhunt .gform_wrapper .gform_page_footer {
+  border-top: none;
+  padding: 0; }
+  /* line 1206, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/app.scss */
+  #devhunt .gform_wrapper .gform_page_footer input[type=button], #devhunt .gform_wrapper .gform_page_footer input[type=submit] {
+    font-family: 'proxima-nova', Helvetica, Arial, sans-serif;
+    font-size: 22px;
+    font-size: 2.2rem;
+    background: transparent;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    font-weight: 900;
+    padding: 32px 64px;
+    padding: 2rem 4rem;
+    margin: auto;
+    margin-top: 64px;
+    margin-top: 4rem;
+    border: solid 2px #FFF;
+    border-radius: 999px;
+    display: block;
+    transition: all 0.3s ease-in-out; }
+    @media screen and (max-width: max-width 767px 12) {
+      #devhunt .gform_wrapper .gform_page_footer input[type=button], #devhunt .gform_wrapper .gform_page_footer input[type=submit] {
+        font-size: 16.5px;
+        font-size: 1.65rem; } }
+    /* line 1219, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/app.scss */
+    #devhunt .gform_wrapper .gform_page_footer input[type=button]:hover, #devhunt .gform_wrapper .gform_page_footer input[type=submit]:hover {
+      background: #FFF;
+      color: #454e53; }
+  /* line 1224, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/app.scss */
+  #devhunt .gform_wrapper .gform_page_footer .gform_ajax_spinner {
+    display: none; }
+  /* line 1227, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/app.scss */
+  #devhunt .gform_wrapper .gform_page_footer .gform_previous_button {
+    display: none !important; }
+  /* line 1230, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/app.scss */
+  #devhunt .gform_wrapper .gform_page_footer .gform_page_fields {
+    overflow: hidden; }
+  /* line 1235, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/app.scss */
+  #devhunt .gform_wrapper .gform_page_footer .gform_fields ul li:before {
+    content: none !important;
+    display: none !important; }
+
+/* line 1244, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/app.scss */
+#slider img {
+  max-width: 100%;
+  width: 100%; }
+
+/* line 1249, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/app.scss */
+.slick-slider {
+  margin-bottom: 0 !important;
+  background: #FFF; }
+
+/* line 1253, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/app.scss */
+.slick-initializing {
+  display: none; }
+
+/* line 1257, /Users/David/Projekt/raketblogg/wp-content/themes/raketblogg/assets/sass/app.scss */
+.CodeMirror {
+  font-size: 13px; }
+
+/* Slider */
+/* line 40, /Users/David/Projekt/raketblogg/bower_components/slick.js/slick/slick */
+.slick-slider {
+  position: relative;
+  display: block;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -ms-touch-action: pan-y;
+  touch-action: pan-y;
+  -webkit-tap-highlight-color: transparent; }
+
+/* line 55, /Users/David/Projekt/raketblogg/bower_components/slick.js/slick/slick */
+.slick-list {
+  position: relative;
+  overflow: hidden;
+  display: block;
+  margin: 0;
+  padding: 0; }
+  /* line 62, /Users/David/Projekt/raketblogg/bower_components/slick.js/slick/slick */
+  .slick-list:focus {
+    outline: none; }
+  /* line 66, /Users/David/Projekt/raketblogg/bower_components/slick.js/slick/slick */
+  .slick-loading .slick-list {
+    background: #fff url("/ajax-loader.gif") center center no-repeat; }
+  /* line 70, /Users/David/Projekt/raketblogg/bower_components/slick.js/slick/slick */
+  .slick-list.dragging {
+    cursor: pointer;
+    cursor: hand; }
+
+/* line 75, /Users/David/Projekt/raketblogg/bower_components/slick.js/slick/slick */
+.slick-slider .slick-track {
+  -webkit-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0); }
+
+/* line 83, /Users/David/Projekt/raketblogg/bower_components/slick.js/slick/slick */
+.slick-track {
+  position: relative;
+  left: 0;
+  top: 0;
+  display: block; }
+  /* line 90, /Users/David/Projekt/raketblogg/bower_components/slick.js/slick/slick */
+  .slick-track:before, .slick-track:after {
+    content: "";
+    display: table; }
+  /* line 95, /Users/David/Projekt/raketblogg/bower_components/slick.js/slick/slick */
+  .slick-track:after {
+    clear: both; }
+  /* line 99, /Users/David/Projekt/raketblogg/bower_components/slick.js/slick/slick */
+  .slick-loading .slick-track {
+    visibility: hidden; }
+
+/* line 103, /Users/David/Projekt/raketblogg/bower_components/slick.js/slick/slick */
+.slick-slide {
+  float: left;
+  height: 100%;
+  min-height: 1px;
+  display: none; }
+  /* line 107, /Users/David/Projekt/raketblogg/bower_components/slick.js/slick/slick */
+  [dir="rtl"] .slick-slide {
+    float: right; }
+  /* line 110, /Users/David/Projekt/raketblogg/bower_components/slick.js/slick/slick */
+  .slick-slide img {
+    display: block; }
+  /* line 113, /Users/David/Projekt/raketblogg/bower_components/slick.js/slick/slick */
+  .slick-slide.slick-loading img {
+    display: none; }
+  /* line 119, /Users/David/Projekt/raketblogg/bower_components/slick.js/slick/slick */
+  .slick-slide.dragging img {
+    pointer-events: none; }
+  /* line 123, /Users/David/Projekt/raketblogg/bower_components/slick.js/slick/slick */
+  .slick-initialized .slick-slide {
+    display: block; }
+  /* line 127, /Users/David/Projekt/raketblogg/bower_components/slick.js/slick/slick */
+  .slick-loading .slick-slide {
+    visibility: hidden; }
+  /* line 131, /Users/David/Projekt/raketblogg/bower_components/slick.js/slick/slick */
+  .slick-vertical .slick-slide {
+    display: block;
+    height: auto;
+    border: 1px solid transparent; }
+
+/* Icons */
+@font-face {
+  font-family: "slick";
+  src: url("./fonts/slick.eot");
+  src: url("./fonts/slick.eot?#iefix") format("embedded-opentype"), url("./fonts/slick.woff") format("woff"), url("./fonts/slick.ttf") format("truetype"), url("./fonts/slick.svg#slick") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+/* Arrows */
+/* line 155, /Users/David/Projekt/raketblogg/bower_components/slick.js/slick/slick */
+.slick-prev, .slick-next {
+  position: absolute;
+  display: block;
+  height: 20px;
+  width: 20px;
+  line-height: 0;
+  font-size: 0;
+  cursor: pointer;
+  background: transparent;
+  color: transparent;
+  top: 50%;
+  margin-top: -10px;
+  padding: 0;
+  border: none;
+  outline: none; }
+  /* line 170, /Users/David/Projekt/raketblogg/bower_components/slick.js/slick/slick */
+  .slick-prev:hover, .slick-prev:focus, .slick-next:hover, .slick-next:focus {
+    outline: none;
+    background: transparent;
+    color: transparent; }
+    /* line 174, /Users/David/Projekt/raketblogg/bower_components/slick.js/slick/slick */
+    .slick-prev:hover:before, .slick-prev:focus:before, .slick-next:hover:before, .slick-next:focus:before {
+      opacity: 1; }
+  /* line 178, /Users/David/Projekt/raketblogg/bower_components/slick.js/slick/slick */
+  .slick-prev.slick-disabled:before, .slick-next.slick-disabled:before {
+    opacity: 0.25; }
+
+/* line 182, /Users/David/Projekt/raketblogg/bower_components/slick.js/slick/slick */
+.slick-prev:before, .slick-next:before {
+  font-family: "slick";
+  font-size: 20px;
+  line-height: 1;
+  color: white;
+  opacity: 0.75;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+/* line 191, /Users/David/Projekt/raketblogg/bower_components/slick.js/slick/slick */
+.slick-prev {
+  left: -25px; }
+  /* line 193, /Users/David/Projekt/raketblogg/bower_components/slick.js/slick/slick */
+  [dir="rtl"] .slick-prev {
+    left: auto;
+    right: -25px; }
+  /* line 197, /Users/David/Projekt/raketblogg/bower_components/slick.js/slick/slick */
+  .slick-prev:before {
+    content: '\2190'; }
+    /* line 199, /Users/David/Projekt/raketblogg/bower_components/slick.js/slick/slick */
+    [dir="rtl"] .slick-prev:before {
+      content: '\2192'; }
+
+/* line 204, /Users/David/Projekt/raketblogg/bower_components/slick.js/slick/slick */
+.slick-next {
+  right: -25px; }
+  /* line 206, /Users/David/Projekt/raketblogg/bower_components/slick.js/slick/slick */
+  [dir="rtl"] .slick-next {
+    left: -25px;
+    right: auto; }
+  /* line 210, /Users/David/Projekt/raketblogg/bower_components/slick.js/slick/slick */
+  .slick-next:before {
+    content: '\2192'; }
+    /* line 212, /Users/David/Projekt/raketblogg/bower_components/slick.js/slick/slick */
+    [dir="rtl"] .slick-next:before {
+      content: '\2190'; }
+
+/* Dots */
+/* line 220, /Users/David/Projekt/raketblogg/bower_components/slick.js/slick/slick */
+.slick-slider {
+  margin-bottom: 30px; }
+
+/* line 223, /Users/David/Projekt/raketblogg/bower_components/slick.js/slick/slick */
+.slick-dots {
+  position: absolute;
+  bottom: -45px;
+  list-style: none;
+  display: block;
+  text-align: center;
+  padding: 0;
+  width: 100%; }
+  /* line 232, /Users/David/Projekt/raketblogg/bower_components/slick.js/slick/slick */
+  .slick-dots li {
+    position: relative;
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    margin: 0 5px;
+    padding: 0;
+    cursor: pointer; }
+    /* line 241, /Users/David/Projekt/raketblogg/bower_components/slick.js/slick/slick */
+    .slick-dots li button {
+      border: 0;
+      background: transparent;
+      display: block;
+      height: 20px;
+      width: 20px;
+      outline: none;
+      line-height: 0;
+      font-size: 0;
+      color: transparent;
+      padding: 5px;
+      cursor: pointer; }
+      /* line 253, /Users/David/Projekt/raketblogg/bower_components/slick.js/slick/slick */
+      .slick-dots li button:hover, .slick-dots li button:focus {
+        outline: none; }
+        /* line 255, /Users/David/Projekt/raketblogg/bower_components/slick.js/slick/slick */
+        .slick-dots li button:hover:before, .slick-dots li button:focus:before {
+          opacity: 1; }
+      /* line 260, /Users/David/Projekt/raketblogg/bower_components/slick.js/slick/slick */
+      .slick-dots li button:before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        content: '\2022';
+        width: 20px;
+        height: 20px;
+        font-family: "slick";
+        font-size: 6px;
+        line-height: 20px;
+        text-align: center;
+        color: black;
+        opacity: 0.25;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale; }
+    /* line 279, /Users/David/Projekt/raketblogg/bower_components/slick.js/slick/slick */
+    .slick-dots li.slick-active button:before {
+      color: black;
+      opacity: 0.75; }
+
+/* -----------------------------------------
+   Bower: SCSS Plugins
+----------------------------------------- */
+/*# sourceMappingURL=app.css.map */
